@@ -1,4 +1,6 @@
 import json
+from collections import Counter
+
 
 full_file_path = "/Users/cemerturkan/Downloads/15946.json"
 
@@ -6,14 +8,11 @@ with open(full_file_path, "r") as file:
     data = json.load(file)
 
 
-save_path = "../data/small_sample.json"
+type_counts = Counter(event['type']['name'] for event in data)
+counter = 0
+for event_type, count in type_counts.items():
+    print(f"{event_type}: {count}")
+    counter += count
 
-allowed_events = ['Shot','Pass' ,'Ball Receipt*', 'Ball Recovery' ,'Miscontrol' ,'Dispossessed' ,'Interception', 'Duel', 'Clearance' ,'Dribble', 'Carry']
-small_events = []
-
-for event in data:
-    if event['type']['name'] in allowed_events:
-        small_events.append(event)
-        
-with open(save_path, "w") as file:
-    json.dump(small_events, file, indent=4)
+print('Total count:', counter)
+print('Num events:', len(data))

@@ -8,7 +8,7 @@ with open(full_file_path, "r") as file:
 
 save_path = "../data/small_sample.json"
 
-allowed_events = ['Shot', 'Pass', 'Dribble']
+allowed_events = ['Shot','Pass' ,'Ball Receipt*', 'Ball Recovery' ,'Miscontrol' ,'Dispossessed' ,'Interception', 'Duel', 'Clearance' ,'Dribble', 'Carry']
 small_events = []
 
 for event in data:

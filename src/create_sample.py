@@ -13,6 +13,7 @@ small_events = []
 
 for event in data:
     if event['type']['name'] in allowed_events:
+        
         small_events.append(event)
         
 with open(save_path, "w") as file:

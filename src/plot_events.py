@@ -18,10 +18,12 @@ pitch.draw(ax=ax)
 
 # Elements to update during animation
 ball_marker, = ax.plot([], [], 'wo', markersize=15, markeredgewidth=1, markeredgecolor='black')  
-ball_text = ax.text(0, 0, '', ha='center', va='center', fontsize=8, color='black', fontweight='bold')  
+ball_text = ax.text(0, 0, '', ha='center', va='center', fontsize=7, color='black', fontweight='bold')  
 
 popup_text = ax.text(50, 85, '', ha='center', va='center', fontsize=12, color='white', 
                       bbox=dict(facecolor='black', edgecolor='white', boxstyle='round,pad=0.5'))
+
+
 
 def team_to_color(events):
     teams = []
@@ -52,9 +54,9 @@ def update(frame):
 
     player_pos = "".join(word[0] for word in event['position']['name'].split())
 
-    # Fix: Wrap x and y in lists
     ball_marker.set_data([x], [y])
     ball_marker.set_color(color_mapping[team_id])
+
     ball_text.set_position((x, y))
     ball_text.set_text(player_pos)
 
@@ -78,6 +80,14 @@ def update(frame):
         outcome = event['pass']['outcome']['name']
         text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
 
+    elif event_type == "Interception" and event['interception'].get("outcome") is not None:
+        outcome = event['interception']['outcome']['name']
+        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+    
+    elif event_type == "Dribble" and event['dribble'].get("outcome") is not None:
+        outcome = event['dribble']['outcome']['name']
+        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+
     else:
         text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type}"
     
@@ -89,5 +99,4 @@ def update(frame):
 
 # Animate with 2s delay between frames
 ani = FuncAnimation(fig, update, frames=len(data), interval=2000, repeat=True)
-
 plt.show()

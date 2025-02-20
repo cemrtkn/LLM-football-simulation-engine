@@ -34,6 +34,7 @@ def team_to_color(events):
     mapping = {teams[0]: 'c', teams[1]: 'm'}
     return mapping
 def coordinate_inverter(mapping, team_id, x, y):
+    # event coordinates come for both teams relative to their goal
     teams = list(mapping.keys())
     if team_id == teams[1]:
         x = 120-x
@@ -47,9 +48,9 @@ def update(frame):
     x, y = event['location']
     team_id = str(event['team']['id'])
     x, y = coordinate_inverter(color_mapping, team_id, x, y)
+    possession_idx = event['possession']
 
     player_pos = "".join(word[0] for word in event['position']['name'].split())
-    event_type = event['type']['name']
 
     # Fix: Wrap x and y in lists
     ball_marker.set_data([x], [y])
@@ -57,8 +58,30 @@ def update(frame):
     ball_text.set_position((x, y))
     ball_text.set_text(player_pos)
 
-    popup_text.set_text(f"Time: {event['timestamp']} | Event: {event_type}")
+    event_type = event['type']['name']
+    if event_type == "Goal Keeper":
+        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['goalkeeper']['type']['name']}"
 
+    elif event_type == "Duel":
+        if event['duel']['type']['name'] == "Tackle":
+            outcome = event['duel']['outcome']
+            text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']} | Outcome: {outcome}"
+
+        elif event['duel']['type']['name'] == "Aerial Lost":
+            text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']}"
+    
+    elif event_type == "Ball Receipt*" and event.get("ball_receipt") is not None:
+        outcome = event['ball_receipt']['outcome']['name']
+        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+
+    elif event_type == "Pass" and event['pass'].get("outcome") is not None:
+        outcome = event['pass']['outcome']['name']
+        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+
+    else:
+        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type}"
+    
+    popup_text.set_text(text)
     popup_text.set_position((x, y - 6))  # Move popup slightly above the ball
 
     

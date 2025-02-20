@@ -8,12 +8,12 @@ with open(full_file_path, "r") as file:
 
 save_path = "../data/small_sample.json"
 
-allowed_events = ['Shot' ,'Pass' ,'Ball Receipt*' ,'Ball Recovery' ,'Miscontrol' ,'Dispossessed' ,'Interception' ,'Duel' ,'Clearance' ,'Dribble' ,'Carry' ,'Goal Keeper', 'Foul Committed']
+allowed_events = ['Shot', 'Pass', 'Ball Receipt*', 'Ball Recovery', 'Miscontrol', 'Dispossessed', 'Interception', 'Duel', 'Clearance', 'Dribble', 'Carry', 'Goal Keeper', 'Foul Committed']
 small_events = []
 
 for event in data:
     if event['type']['name'] in allowed_events:
-        
+
         small_events.append(event)
         
 with open(save_path, "w") as file:

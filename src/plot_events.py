@@ -64,34 +64,33 @@ def update(frame):
     event_type = event['type']['name']
     outcome = None
     if event_type == "Goal Keeper":
-        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['goalkeeper']['type']['name']}"
+        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['goalkeeper']['type']['name']}"
 
     elif event_type == "Duel":
         if event['duel']['type']['name'] == "Aerial Lost":
-            text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']}"
+            text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']}"
         
         elif event['duel']['type']['name'] == "Tackle":
             outcome = event['duel']['outcome']
-            text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']} | Outcome: {outcome}"
+            text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']} | Outcome: {outcome}"
  
     elif event_type == "Ball Receipt*" and event.get("ball_receipt") is not None:
         outcome = event['ball_receipt']['outcome']['name']
-        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
 
     elif event_type == "Pass" and event['pass'].get("outcome") is not None:
         outcome = event['pass']['outcome']['name']
-        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
 
     elif event_type == "Interception" and event['interception'].get("outcome") is not None:
         outcome = event['interception']['outcome']['name']
-        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
     
     elif event_type == "Dribble" and event['dribble'].get("outcome") is not None:
         outcome = event['dribble']['outcome']['name']
-        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
-    #elif (event.get('end_location') is not None) or (event["_".join(event_type.lower().split())].get('end_location') is not None):
+        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
     else:
-        text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type}"
+        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type}"
 
     
     sub_key = "_".join(event_type.lower().split())
@@ -106,23 +105,22 @@ def update(frame):
         arrow.xy = (x_end, y_end)
         arrow.arrow_patch.set_color('white')
 
+        text = f"Start position: ({x}, {y}), End Position: ({x_end}, {y_end}) | " + text
 
-        print(outcome=='Incomplete')
         if outcome is not None:
             if outcome == 'Incomplete':
                 arrow.arrow_patch.set_color('red')
 
 
     else:
+        text = f"Start position: ({x}, {y}) | " + text
         arrow.set_position((0, 0))
         arrow.xy = (0, 0)
 
-    
     popup_text.set_text(text)
     popup_text.set_position((x, y - 6))  # Move popup slightly above the ball
 
-    
-    return ball_marker, popup_text
+    return ball_marker, ball_text, popup_text, arrow
 
 # Animate with 2s delay between frames
 ani = FuncAnimation(fig, update, frames=len(data), interval=2000, repeat=True)

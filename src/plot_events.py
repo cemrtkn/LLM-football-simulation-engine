@@ -23,7 +23,8 @@ ball_text = ax.text(0, 0, '', ha='center', va='center', fontsize=7, color='black
 popup_text = ax.text(50, 85, '', ha='center', va='center', fontsize=12, color='white', 
                       bbox=dict(facecolor='black', edgecolor='white', boxstyle='round,pad=0.5'))
 
-
+arrow = ax.annotate("", xy=(0, 0), xytext=(0, 0),
+                    arrowprops=dict(arrowstyle="->", color="white", lw=2))
 
 def team_to_color(events):
     teams = []
@@ -61,17 +62,18 @@ def update(frame):
     ball_text.set_text(player_pos)
 
     event_type = event['type']['name']
+    outcome = None
     if event_type == "Goal Keeper":
         text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['goalkeeper']['type']['name']}"
 
     elif event_type == "Duel":
-        if event['duel']['type']['name'] == "Tackle":
+        if event['duel']['type']['name'] == "Aerial Lost":
+            text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']}"
+        
+        elif event['duel']['type']['name'] == "Tackle":
             outcome = event['duel']['outcome']
             text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']} | Outcome: {outcome}"
-
-        elif event['duel']['type']['name'] == "Aerial Lost":
-            text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']}"
-    
+ 
     elif event_type == "Ball Receipt*" and event.get("ball_receipt") is not None:
         outcome = event['ball_receipt']['outcome']['name']
         text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
@@ -87,9 +89,34 @@ def update(frame):
     elif event_type == "Dribble" and event['dribble'].get("outcome") is not None:
         outcome = event['dribble']['outcome']['name']
         text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
-
+    #elif (event.get('end_location') is not None) or (event["_".join(event_type.lower().split())].get('end_location') is not None):
     else:
         text = f"{possession_idx}. Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type}"
+
+    
+    sub_key = "_".join(event_type.lower().split())
+    if (event.get(sub_key) is not None) and (event[sub_key].get('end_location') is not None):
+        end_coord_list = list(event["_".join(event_type.lower().split())].get('end_location'))
+        x_end = end_coord_list[0]
+        y_end = end_coord_list[1]
+
+        x_end, y_end = coordinate_inverter(color_mapping, team_id, x_end, y_end)
+
+        arrow.set_position((x, y))
+        arrow.xy = (x_end, y_end)
+        arrow.arrow_patch.set_color('white')
+
+
+        print(outcome=='Incomplete')
+        if outcome is not None:
+            if outcome == 'Incomplete':
+                arrow.arrow_patch.set_color('red')
+
+
+    else:
+        arrow.set_position((0, 0))
+        arrow.xy = (0, 0)
+
     
     popup_text.set_text(text)
     popup_text.set_position((x, y - 6))  # Move popup slightly above the ball

@@ -4,12 +4,15 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from mplsoccer import Pitch
 import json
+import ast
 
-data_path = "../data/small_sample.json"
+
+data_path = "../data/small_sample.csv"
 data = None
 
-with open(data_path, "r") as file:
-    data = json.load(file)
+event_df = pd.read_csv(data_path)
+event_df['start_loc'] = event_df['start_loc'].apply(ast.literal_eval)
+event_df['end_loc'] = event_df['end_loc'].apply(ast.literal_eval)
 
 # Initialize the pitch
 fig, ax = plt.subplots(figsize=(10, 6))
@@ -26,99 +29,36 @@ popup_text = ax.text(50, 85, '', ha='center', va='center', fontsize=12, color='w
 arrow = ax.annotate("", xy=(0, 0), xytext=(0, 0),
                     arrowprops=dict(arrowstyle="->", color="white", lw=2))
 
-def team_to_color(events):
-    teams = []
-    for event in events:
-        team_id = str(event['team']['id'])
-        if team_id not in teams:
-            teams.append(team_id)
-        if len(team_id) == 2:
-            break
-    mapping = {teams[0]: 'c', teams[1]: 'm'}
-    return mapping
-def coordinate_inverter(mapping, team_id, x, y):
-    # event coordinates come for both teams relative to their goal
-    teams = list(mapping.keys())
-    if team_id == teams[1]:
-        x = 120-x
-        y = 80-y
-    return x,y
-
-color_mapping = team_to_color(data)
 
 def update(frame):
-    event = data[frame]
-    x, y = event['location']
-    team_id = str(event['team']['id'])
-    x, y = coordinate_inverter(color_mapping, team_id, x, y)
-    possession_idx = event['possession']
 
-    player_pos = "".join(word[0] for word in event['position']['name'].split())
+    event = event_df.iloc[frame]
+    x,y = event['start_loc'][0], event['start_loc'][1]
+    x_end,y_end = event['end_loc'][0], event['end_loc'][1]
+    team_color = event['team_color']
+    player_pos = event['player_pos']
+    text = event['text']
+    outcome = event['outcome']
 
     ball_marker.set_data([x], [y])
-    ball_marker.set_color(color_mapping[team_id])
+    ball_marker.set_color(team_color)
 
     ball_text.set_position((x, y))
     ball_text.set_text(player_pos)
-    
-    # Turn event into text
-    event_type = event['type']['name']
-    outcome = None
-    if event_type == "Goal Keeper":
-        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['goalkeeper']['type']['name']}"
 
-    elif event_type == "Duel":
-        if event['duel']['type']['name'] == "Aerial Lost":
-            text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']}"
-        
-        elif event['duel']['type']['name'] == "Tackle":
-            outcome = event['duel']['outcome']
-            text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']} | Outcome: {outcome}"
- 
-    elif event_type == "Ball Receipt*" and event.get("ball_receipt") is not None:
-        outcome = event['ball_receipt']['outcome']['name']
-        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
-
-    elif event_type == "Pass" and event['pass'].get("outcome") is not None:
-        outcome = event['pass']['outcome']['name']
-        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
-
-    elif event_type == "Interception" and event['interception'].get("outcome") is not None:
-        outcome = event['interception']['outcome']['name']
-        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
-    
-    elif event_type == "Dribble" and event['dribble'].get("outcome") is not None:
-        outcome = event['dribble']['outcome']['name']
-        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
-    else:
-        text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type}"
-
-    
-
-    # Add position info
-    sub_key = "_".join(event_type.lower().split())
-    if (event.get(sub_key) is not None) and (event[sub_key].get('end_location') is not None):
-        end_coord_list = list(event["_".join(event_type.lower().split())].get('end_location'))
-        x_end = end_coord_list[0]
-        y_end = end_coord_list[1]
-
-        x_end, y_end = coordinate_inverter(color_mapping, team_id, x_end, y_end)
-
+    if x_end is not None: # event has a destination
         arrow.set_position((x, y))
         arrow.xy = (x_end, y_end)
-        arrow.arrow_patch.set_color('white')
-
-        text = f"Start position: ({x}, {y}), End Position: ({x_end}, {y_end}) | " + text
-
-        if outcome is not None:
-            if outcome == 'Incomplete':
-                arrow.arrow_patch.set_color('red')
-
-
     else:
-        text = f"Start position: ({x}, {y}) | " + text
         arrow.set_position((0, 0))
         arrow.xy = (0, 0)
+
+    # Show incomplete action
+    if outcome == 'Incomplete':
+        arrow.arrow_patch.set_color('red')
+    else:
+        arrow.arrow_patch.set_color('white')
+        
 
     popup_text.set_text(text)
     popup_text.set_position((x, y - 6))  # Move popup slightly above the ball
@@ -126,5 +66,5 @@ def update(frame):
     return ball_marker, ball_text, popup_text, arrow
 
 # Animate with 2s delay between frames
-ani = FuncAnimation(fig, update, frames=len(data), interval=2000, repeat=True)
+ani = FuncAnimation(fig, update, frames=len(event_df), interval=2000, repeat=True)
 plt.show()

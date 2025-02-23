@@ -2,6 +2,7 @@ import json
 import os
 import pandas as pd
 import numpy as np
+import re
 
 def team_to_color(events):
     teams = []
@@ -19,9 +20,21 @@ def coordinate_inverter(mapping, team_id, x, y):
     if team_id == teams[1]:
         x = 120-x
         y = 80-y
-    x = np.round(x, decimals=2)
-    y = np.round(y, decimals=2)
+    x = float(np.round(x, decimals=2))
+    y = float(np.round(y, decimals=2))
     return x,y
+
+def outcome_catcher(text):
+    outcome_pattern = r"Outcome:\s*([\w\s]+)"
+
+    match = re.search(outcome_pattern, text)
+    if match:
+        outcome = match.group(1)
+    else:
+        outcome = None
+    
+    return outcome
+
 
 matches_dir = '../data/big_sample/'
 
@@ -29,7 +42,7 @@ matches_dir = '../data/big_sample/'
 save_path = "../data/small_sample.csv"
 
 allowed_events = ['Shot', 'Pass', 'Ball Receipt*', 'Ball Recovery', 'Miscontrol', 'Dispossessed', 'Interception', 'Duel', 'Clearance', 'Dribble', 'Carry', 'Goal Keeper', 'Foul Committed']
-small_events = {'match_id': [], 'event_id': [], 'possession_id': [], 'text': []}
+small_events = {'match_id': [], 'event_id': [], 'team_color': [], 'possession_id': [], 'player_pos': [] ,'start_loc': [], 'end_loc': [] ,'text': [], 'outcome': []}
 
 for match_file in os.listdir(matches_dir):
 
@@ -47,6 +60,9 @@ for match_file in os.listdir(matches_dir):
 
             text = None
             outcome = None
+            x,y = None, None
+            x_end,y_end = None, None
+
 
             if event_type == "Goal Keeper":
                 text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['goalkeeper']['type']['name']}"
@@ -97,11 +113,17 @@ for match_file in os.listdir(matches_dir):
             elif text != None:
                 text = f"Start position: ({x}, {y}) | " + text
 
-            {'match_id': [], 'event_id': [], 'possession_id': [], 'text': [], 'outcome': []}
+
             small_events['match_id'].append(match_id)
             small_events['event_id'].append(len(small_events['event_id']))
+            small_events['team_color'].append(color_mapping[team_id])
             small_events['possession_id'].append(possession_idx)
+            small_events['player_pos'].append(player_pos)
+            small_events['start_loc'].append((x,y))
+            small_events['end_loc'].append((x_end,y_end))
             small_events['text'].append(text)
+            small_events['outcome'].append(outcome_catcher(text))
+            
 
 
 small_events_df = pd.DataFrame(small_events)

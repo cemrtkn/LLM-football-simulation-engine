@@ -37,14 +37,12 @@ def outcome_catcher(text):
 
 
 matches_dir = '../data/big_sample/'
-
-
-save_path = "../data/small_sample.csv"
+save_path = "../data/small/"
 
 allowed_events = ['Shot', 'Pass', 'Ball Receipt*', 'Ball Recovery', 'Miscontrol', 'Dispossessed', 'Interception', 'Duel', 'Clearance', 'Dribble', 'Carry', 'Goal Keeper', 'Foul Committed']
-small_events = {'match_id': [], 'event_id': [], 'team_color': [], 'possession_id': [], 'player_pos': [] ,'start_loc': [], 'end_loc': [] ,'text': [], 'outcome': []}
 
 for match_file in os.listdir(matches_dir):
+    small_events = {'match_id': [], 'event_id': [], 'team_color': [], 'possession_id': [], 'player_pos': [] ,'start_loc': [], 'end_loc': [] ,'text': [], 'outcome': []}
 
     match_id = match_file.split('.')[0]
     with open(matches_dir + match_file , "r") as file:
@@ -72,7 +70,7 @@ for match_file in os.listdir(matches_dir):
                     text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']}"
                 
                 elif event['duel']['type']['name'] == "Tackle":
-                    outcome = event['duel']['outcome']
+                    outcome = event['duel']['outcome']['name'] # special for tackle
                     text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']} | Outcome: {outcome}"
         
             elif event_type == "Ball Receipt*" and event.get("ball_receipt") is not None:
@@ -123,8 +121,6 @@ for match_file in os.listdir(matches_dir):
             small_events['end_loc'].append((x_end,y_end))
             small_events['text'].append(text)
             small_events['outcome'].append(outcome_catcher(text))
-            
 
-
-small_events_df = pd.DataFrame(small_events)
-small_events_df.to_csv(save_path)
+    small_events_df = pd.DataFrame(small_events)
+    small_events_df.to_csv(save_path + match_id + '.csv')

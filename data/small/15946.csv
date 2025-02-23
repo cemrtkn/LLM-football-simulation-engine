@@ -264,7 +264,7 @@
 262,15946,262,m,13,RM,"(48.7, 14.8)","(None, None)","Start position: (48.7, 14.8) | Time: 00:06:16.193 | Phase: From Goal Kick | Event: Ball Receipt*",
 263,15946,263,m,13,RM,"(48.7, 14.8)","(38.0, 16.7)","Start position: (48.7, 14.8), End Position: (38.0, 16.7) | Time: 00:06:16.193 | Phase: From Goal Kick | Event: Carry",
 264,15946,264,m,13,RM,"(38.0, 16.7)","(None, None)","Start position: (38.0, 16.7) | Time: 00:06:18.540 | Phase: From Goal Kick | Event: Dispossessed",
-265,15946,265,c,13,LM,"(38.1, 16.8)","(None, None)","Start position: (38.1, 16.8) | Time: 00:06:18.540 | Phase: From Goal Kick | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+265,15946,265,c,13,LM,"(38.1, 16.8)","(None, None)","Start position: (38.1, 16.8) | Time: 00:06:18.540 | Phase: From Goal Kick | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 266,15946,266,m,13,CF,"(32.9, 22.7)","(45.3, 21.9)","Start position: (32.9, 22.7), End Position: (45.3, 21.9) | Time: 00:06:19.188 | Phase: From Goal Kick | Event: Pass",
 267,15946,267,m,13,RCM,"(45.3, 21.9)","(None, None)","Start position: (45.3, 21.9) | Time: 00:06:20.851 | Phase: From Goal Kick | Event: Ball Receipt*",
 268,15946,268,m,13,RCM,"(45.3, 21.9)","(45.3, 25.7)","Start position: (45.3, 21.9), End Position: (45.3, 25.7) | Time: 00:06:20.851 | Phase: From Goal Kick | Event: Carry",
@@ -301,7 +301,7 @@
 299,15946,299,m,14,LM,"(28.6, 55.9)","(None, None)","Start position: (28.6, 55.9) | Time: 00:07:06.652 | Phase: From Throw In | Event: Ball Recovery",
 300,15946,300,m,14,LM,"(28.6, 55.9)","(28.6, 55.9)","Start position: (28.6, 55.9), End Position: (28.6, 55.9) | Time: 00:07:06.652 | Phase: From Throw In | Event: Carry",
 301,15946,301,m,14,LM,"(28.6, 55.9)","(None, None)","Start position: (28.6, 55.9) | Time: 00:07:07.446 | Phase: From Throw In | Event: Dribble | Outcome: Incomplete",Incomplete
-302,15946,302,c,14,RB,"(28.7, 56.0)","(None, None)","Start position: (28.7, 56.0) | Time: 00:07:07.446 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: {'id': 4, 'name': 'Won'}", 
+302,15946,302,c,14,RB,"(28.7, 56.0)","(None, None)","Start position: (28.7, 56.0) | Time: 00:07:07.446 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: Won",Won
 303,15946,303,c,14,RB,"(28.7, 56.0)","(12.3, 58.5)","Start position: (28.7, 56.0), End Position: (12.3, 58.5) | Time: 00:07:07.446 | Phase: From Throw In | Event: Carry",
 304,15946,304,c,14,RB,"(12.3, 58.5)","(9.5, 52.8)","Start position: (12.3, 58.5), End Position: (9.5, 52.8) | Time: 00:07:10.050 | Phase: From Throw In | Event: Pass",
 305,15946,305,c,14,RCB,"(9.5, 52.8)","(None, None)","Start position: (9.5, 52.8) | Time: 00:07:10.698 | Phase: From Throw In | Event: Ball Receipt*",
@@ -397,12 +397,12 @@
 395,15946,395,c,14,LCF,"(83.1, 43.8)","(None, None)","Start position: (83.1, 43.8) | Time: 00:08:38.717 | Phase: From Throw In | Event: Ball Receipt*",
 396,15946,396,c,14,LCF,"(83.1, 43.8)","(86.3, 49.6)","Start position: (83.1, 43.8), End Position: (86.3, 49.6) | Time: 00:08:38.717 | Phase: From Throw In | Event: Carry",
 397,15946,397,c,14,LCF,"(86.3, 49.6)","(None, None)","Start position: (86.3, 49.6) | Time: 00:08:40.192 | Phase: From Throw In | Event: Dribble | Outcome: Incomplete",Incomplete
-398,15946,398,m,14,RCM,"(86.2, 49.5)","(None, None)","Start position: (86.2, 49.5) | Time: 00:08:40.192 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: {'id': 16, 'name': 'Success In Play'}", 
+398,15946,398,m,14,RCM,"(86.2, 49.5)","(None, None)","Start position: (86.2, 49.5) | Time: 00:08:40.192 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: Success In Play",Success In Play
 399,15946,399,m,14,CDM,"(88.5, 51.6)","(84.9, 50.1)","Start position: (88.5, 51.6), End Position: (84.9, 50.1) | Time: 00:08:40.831 | Phase: From Throw In | Event: Pass | Outcome: Incomplete",Incomplete
 400,15946,400,c,14,LCF,"(85.0, 50.2)","(None, None)","Start position: (85.0, 50.2) | Time: 00:08:40.946 | Phase: From Throw In | Event: Ball Recovery",
 401,15946,401,c,14,LCF,"(85.0, 50.2)","(100.6, 54.9)","Start position: (85.0, 50.2), End Position: (100.6, 54.9) | Time: 00:08:40.946 | Phase: From Throw In | Event: Carry",
 402,15946,402,c,14,LCF,"(100.6, 54.9)","(None, None)","Start position: (100.6, 54.9) | Time: 00:08:45.038 | Phase: From Throw In | Event: Dispossessed",
-403,15946,403,m,15,CDM,"(100.5, 54.8)","(None, None)","Start position: (100.5, 54.8) | Time: 00:08:45.038 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 16, 'name': 'Success In Play'}", 
+403,15946,403,m,15,CDM,"(100.5, 54.8)","(None, None)","Start position: (100.5, 54.8) | Time: 00:08:45.038 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Success In Play",Success In Play
 404,15946,404,m,15,LCB,"(105.6, 51.4)","(96.9, 55.9)","Start position: (105.6, 51.4), End Position: (96.9, 55.9) | Time: 00:08:45.723 | Phase: Regular Play | Event: Pass",
 405,15946,405,m,15,CDM,"(96.9, 55.9)","(None, None)","Start position: (96.9, 55.9) | Time: 00:08:47.381 | Phase: Regular Play | Event: Ball Receipt*",
 406,15946,406,m,15,CDM,"(96.9, 55.9)","(95.4, 56.3)","Start position: (96.9, 55.9), End Position: (95.4, 56.3) | Time: 00:08:47.381 | Phase: Regular Play | Event: Carry",
@@ -490,7 +490,7 @@
 488,15946,488,m,18,CF,"(79.3, 38.8)","(None, None)","Start position: (79.3, 38.8) | Time: 00:10:53.880 | Phase: Regular Play | Event: Ball Recovery",
 489,15946,489,m,18,CF,"(79.3, 38.8)","(75.9, 36.0)","Start position: (79.3, 38.8), End Position: (75.9, 36.0) | Time: 00:10:53.880 | Phase: Regular Play | Event: Carry",
 490,15946,490,m,18,CF,"(75.9, 36.0)","(None, None)","Start position: (75.9, 36.0) | Time: 00:10:56.218 | Phase: Regular Play | Event: Dispossessed",
-491,15946,491,c,18,RCB,"(76.0, 36.1)","(None, None)","Start position: (76.0, 36.1) | Time: 00:10:56.218 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+491,15946,491,c,18,RCB,"(76.0, 36.1)","(None, None)","Start position: (76.0, 36.1) | Time: 00:10:56.218 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 492,15946,492,m,18,CF,"(79.3, 33.0)","(69.3, 18.7)","Start position: (79.3, 33.0), End Position: (69.3, 18.7) | Time: 00:10:57.821 | Phase: Regular Play | Event: Pass",
 493,15946,493,m,18,RM,"(69.3, 18.7)","(None, None)","Start position: (69.3, 18.7) | Time: 00:10:59.027 | Phase: Regular Play | Event: Ball Receipt*",
 494,15946,494,m,18,RM,"(69.3, 18.7)","(69.1, 17.6)","Start position: (69.3, 18.7), End Position: (69.1, 17.6) | Time: 00:10:59.027 | Phase: Regular Play | Event: Carry",
@@ -664,7 +664,7 @@
 662,15946,662,m,23,RCM,"(90.9, 36.0)","(None, None)","Start position: (90.9, 36.0) | Time: 00:15:26.635 | Phase: From Keeper | Event: Ball Receipt*",
 663,15946,663,m,23,RCM,"(90.9, 36.0)","(89.2, 37.5)","Start position: (90.9, 36.0), End Position: (89.2, 37.5) | Time: 00:15:26.635 | Phase: From Keeper | Event: Carry",
 664,15946,664,m,23,RCM,"(89.2, 37.5)","(None, None)","Start position: (89.2, 37.5) | Time: 00:15:27.392 | Phase: From Keeper | Event: Dribble | Outcome: Incomplete",Incomplete
-665,15946,665,c,23,RDM,"(89.3, 37.6)","(None, None)","Start position: (89.3, 37.6) | Time: 00:15:27.392 | Phase: From Keeper | Event: Duel | Type: Tackle | Outcome: {'id': 16, 'name': 'Success In Play'}", 
+665,15946,665,c,23,RDM,"(89.3, 37.6)","(None, None)","Start position: (89.3, 37.6) | Time: 00:15:27.392 | Phase: From Keeper | Event: Duel | Type: Tackle | Outcome: Success In Play",Success In Play
 666,15946,666,c,23,LCF,"(92.5, 39.1)","(None, None)","Start position: (92.5, 39.1) | Time: 00:15:27.962 | Phase: From Keeper | Event: Ball Recovery",
 667,15946,667,c,23,LCF,"(92.5, 39.1)","(93.7, 34.7)","Start position: (92.5, 39.1), End Position: (93.7, 34.7) | Time: 00:15:27.962 | Phase: From Keeper | Event: Carry",
 668,15946,668,c,23,LCF,"(93.7, 34.7)","(117.5, 38.0)","Start position: (93.7, 34.7), End Position: (117.5, 38.0) | Time: 00:15:29.059 | Phase: From Keeper | Event: Shot",
@@ -958,7 +958,7 @@
 956,15946,956,c,38,RM,"(50.3, 71.8)","(44.1, 75.2)","Start position: (50.3, 71.8), End Position: (44.1, 75.2) | Time: 00:22:45.835 | Phase: From Throw In | Event: Pass",
 957,15946,957,c,38,RB,"(44.1, 75.2)","(None, None)","Start position: (44.1, 75.2) | Time: 00:22:46.293 | Phase: From Throw In | Event: Ball Receipt*",
 958,15946,958,c,38,RB,"(36.3, 75.4)","(None, None)","Start position: (36.3, 75.4) | Time: 00:22:47.430 | Phase: From Throw In | Event: Dribble | Outcome: Incomplete",Incomplete
-959,15946,959,m,38,LM,"(36.2, 75.3)","(None, None)","Start position: (36.2, 75.3) | Time: 00:22:47.430 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: {'id': 14, 'name': 'Lost Out'}", 
+959,15946,959,m,38,LM,"(36.2, 75.3)","(None, None)","Start position: (36.2, 75.3) | Time: 00:22:47.430 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: Lost Out",Lost Out
 960,15946,960,c,39,RB,"(33.1, 80.0)","(34.1, 62.2)","Start position: (33.1, 80.0), End Position: (34.1, 62.2) | Time: 00:22:57.027 | Phase: From Throw In | Event: Pass",
 961,15946,961,c,39,RDM,"(34.1, 62.2)","(None, None)","Start position: (34.1, 62.2) | Time: 00:22:58.827 | Phase: From Throw In | Event: Ball Receipt*",
 962,15946,962,c,39,RDM,"(34.1, 62.2)","(35.7, 55.4)","Start position: (34.1, 62.2), End Position: (35.7, 55.4) | Time: 00:22:58.827 | Phase: From Throw In | Event: Carry",
@@ -992,7 +992,7 @@
 990,15946,990,c,39,RB,"(95.4, 59.2)","(None, None)","Start position: (95.4, 59.2) | Time: 00:23:34.717 | Phase: From Throw In | Event: Dribble | Outcome: Complete",Complete
 991,15946,991,c,39,RB,"(95.4, 59.2)","(100.0, 61.8)","Start position: (95.4, 59.2), End Position: (100.0, 61.8) | Time: 00:23:34.717 | Phase: From Throw In | Event: Carry",
 992,15946,992,c,39,RB,"(100.0, 61.8)","(None, None)","Start position: (100.0, 61.8) | Time: 00:23:35.380 | Phase: From Throw In | Event: Dribble | Outcome: Incomplete",Incomplete
-993,15946,993,m,40,LCM,"(99.9, 61.7)","(None, None)","Start position: (99.9, 61.7) | Time: 00:23:35.380 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 16, 'name': 'Success In Play'}", 
+993,15946,993,m,40,LCM,"(99.9, 61.7)","(None, None)","Start position: (99.9, 61.7) | Time: 00:23:35.380 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Success In Play",Success In Play
 994,15946,994,m,40,CDM,"(99.9, 57.7)","(86.7, 61.9)","Start position: (99.9, 57.7), End Position: (86.7, 61.9) | Time: 00:23:36.661 | Phase: Regular Play | Event: Pass",
 995,15946,995,m,40,LM,"(86.7, 61.9)","(None, None)","Start position: (86.7, 61.9) | Time: 00:23:37.574 | Phase: Regular Play | Event: Ball Receipt*",
 996,15946,996,m,40,LM,"(86.7, 61.9)","(72.8, 64.3)","Start position: (86.7, 61.9), End Position: (72.8, 64.3) | Time: 00:23:37.574 | Phase: Regular Play | Event: Carry",
@@ -1013,7 +1013,7 @@
 1011,15946,1011,c,42,RCF,"(95.6, 9.0)","(None, None)","Start position: (95.6, 9.0) | Time: 00:24:19.323 | Phase: Regular Play | Event: Ball Receipt*",
 1012,15946,1012,c,42,RCF,"(95.6, 9.0)","(107.0, 4.3)","Start position: (95.6, 9.0), End Position: (107.0, 4.3) | Time: 00:24:19.323 | Phase: Regular Play | Event: Carry",
 1013,15946,1013,c,42,RCF,"(107.0, 4.3)","(None, None)","Start position: (107.0, 4.3) | Time: 00:24:21.191 | Phase: Regular Play | Event: Dispossessed",
-1014,15946,1014,m,42,RCB,"(106.9, 4.2)","(None, None)","Start position: (106.9, 4.2) | Time: 00:24:21.191 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 14, 'name': 'Lost Out'}", 
+1014,15946,1014,m,42,RCB,"(106.9, 4.2)","(None, None)","Start position: (106.9, 4.2) | Time: 00:24:21.191 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Lost Out",Lost Out
 1015,15946,1015,c,43,RCF,"(110.3, 0.1)","(84.3, 4.9)","Start position: (110.3, 0.1), End Position: (84.3, 4.9) | Time: 00:24:25.965 | Phase: From Throw In | Event: Pass",
 1016,15946,1016,c,43,LB,"(84.3, 4.9)","(None, None)","Start position: (84.3, 4.9) | Time: 00:24:27.928 | Phase: From Throw In | Event: Ball Receipt*",
 1017,15946,1017,c,43,LB,"(84.3, 4.9)","(84.5, 5.3)","Start position: (84.3, 4.9), End Position: (84.5, 5.3) | Time: 00:24:27.928 | Phase: From Throw In | Event: Carry",
@@ -1141,7 +1141,7 @@
 1139,15946,1139,m,46,RM,"(42.9, 70.5)","(None, None)","Start position: (42.9, 70.5) | Time: 00:27:34.268 | Phase: Regular Play | Event: Ball Receipt*",
 1140,15946,1140,m,46,RM,"(42.9, 70.5)","(9.3, 66.1)","Start position: (42.9, 70.5), End Position: (9.3, 66.1) | Time: 00:27:34.268 | Phase: Regular Play | Event: Carry",
 1141,15946,1141,m,46,RM,"(9.3, 66.1)","(None, None)","Start position: (9.3, 66.1) | Time: 00:27:40.934 | Phase: Regular Play | Event: Dispossessed",
-1142,15946,1142,c,46,RB,"(9.4, 66.2)","(None, None)","Start position: (9.4, 66.2) | Time: 00:27:40.934 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 4, 'name': 'Won'}", 
+1142,15946,1142,c,46,RB,"(9.4, 66.2)","(None, None)","Start position: (9.4, 66.2) | Time: 00:27:40.934 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Won",Won
 1143,15946,1143,c,46,RB,"(9.4, 66.2)","(10.4, 67.2)","Start position: (9.4, 66.2), End Position: (10.4, 67.2) | Time: 00:27:40.934 | Phase: Regular Play | Event: Carry",
 1144,15946,1144,c,46,RB,"(10.4, 67.2)","(17.9, 65.0)","Start position: (10.4, 67.2), End Position: (17.9, 65.0) | Time: 00:27:42.685 | Phase: Regular Play | Event: Pass",
 1145,15946,1145,c,46,RM,"(17.9, 65.0)","(None, None)","Start position: (17.9, 65.0) | Time: 00:27:43.828 | Phase: Regular Play | Event: Ball Receipt*",
@@ -1164,7 +1164,7 @@
 1162,15946,1162,m,47,LM,"(99.7, 56.5)","(None, None)","Start position: (99.7, 56.5) | Time: 00:28:55.200 | Phase: From Free Kick | Event: Ball Recovery",
 1163,15946,1163,m,47,LM,"(99.7, 56.5)","(102.7, 61.5)","Start position: (99.7, 56.5), End Position: (102.7, 61.5) | Time: 00:28:55.200 | Phase: From Free Kick | Event: Carry",
 1164,15946,1164,m,47,LM,"(102.7, 61.5)","(None, None)","Start position: (102.7, 61.5) | Time: 00:28:56.215 | Phase: From Free Kick | Event: Dribble | Outcome: Incomplete",Incomplete
-1165,15946,1165,c,47,RM,"(102.8, 61.6)","(None, None)","Start position: (102.8, 61.6) | Time: 00:28:56.215 | Phase: From Free Kick | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+1165,15946,1165,c,47,RM,"(102.8, 61.6)","(None, None)","Start position: (102.8, 61.6) | Time: 00:28:56.215 | Phase: From Free Kick | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 1166,15946,1166,m,47,LM,"(102.1, 62.5)","(None, None)","Start position: (102.1, 62.5) | Time: 00:28:57.612 | Phase: From Free Kick | Event: Ball Recovery",
 1167,15946,1167,m,47,LM,"(102.1, 62.5)","(103.7, 64.1)","Start position: (102.1, 62.5), End Position: (103.7, 64.1) | Time: 00:28:57.612 | Phase: From Free Kick | Event: Carry",
 1168,15946,1168,m,47,LM,"(103.7, 64.1)","(69.4, 75.5)","Start position: (103.7, 64.1), End Position: (69.4, 75.5) | Time: 00:28:58.671 | Phase: From Free Kick | Event: Pass",
@@ -1310,11 +1310,11 @@
 1308,15946,1308,c,54,RB,"(96.4, 72.4)","(None, None)","Start position: (96.4, 72.4) | Time: 00:32:22.583 | Phase: From Throw In | Event: Ball Receipt*",
 1309,15946,1309,c,54,RB,"(96.4, 72.4)","(103.4, 67.2)","Start position: (96.4, 72.4), End Position: (103.4, 67.2) | Time: 00:32:22.583 | Phase: From Throw In | Event: Carry",
 1310,15946,1310,c,54,RB,"(103.4, 67.2)","(None, None)","Start position: (103.4, 67.2) | Time: 00:32:25.798 | Phase: From Throw In | Event: Dribble | Outcome: Incomplete",Incomplete
-1311,15946,1311,m,54,LM,"(103.3, 67.1)","(None, None)","Start position: (103.3, 67.1) | Time: 00:32:25.798 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+1311,15946,1311,m,54,LM,"(103.3, 67.1)","(None, None)","Start position: (103.3, 67.1) | Time: 00:32:25.798 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 1312,15946,1312,c,54,RB,"(106.0, 67.8)","(None, None)","Start position: (106.0, 67.8) | Time: 00:32:27.274 | Phase: From Throw In | Event: Ball Recovery",
 1313,15946,1313,c,54,RB,"(106.0, 67.8)","(110.3, 75.2)","Start position: (106.0, 67.8), End Position: (110.3, 75.2) | Time: 00:32:27.274 | Phase: From Throw In | Event: Carry",
 1314,15946,1314,c,54,RB,"(110.3, 75.2)","(None, None)","Start position: (110.3, 75.2) | Time: 00:32:29.604 | Phase: From Throw In | Event: Dispossessed",
-1315,15946,1315,m,54,LCM,"(110.2, 75.1)","(None, None)","Start position: (110.2, 75.1) | Time: 00:32:29.604 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: {'id': 14, 'name': 'Lost Out'}", 
+1315,15946,1315,m,54,LCM,"(110.2, 75.1)","(None, None)","Start position: (110.2, 75.1) | Time: 00:32:29.604 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: Lost Out",Lost Out
 1316,15946,1316,c,55,RB,"(111.3, 80.0)","(102.8, 64.4)","Start position: (111.3, 80.0), End Position: (102.8, 64.4) | Time: 00:32:33.055 | Phase: From Throw In | Event: Pass",
 1317,15946,1317,c,55,RDM,"(102.8, 64.4)","(None, None)","Start position: (102.8, 64.4) | Time: 00:32:34.254 | Phase: From Throw In | Event: Ball Receipt*",
 1318,15946,1318,c,55,RDM,"(102.8, 64.4)","(105.4, 65.8)","Start position: (102.8, 64.4), End Position: (105.4, 65.8) | Time: 00:32:34.254 | Phase: From Throw In | Event: Carry",
@@ -1334,7 +1334,7 @@
 1332,15946,1332,c,55,LM,"(90.4, 28.6)","(None, None)","Start position: (90.4, 28.6) | Time: 00:32:43.157 | Phase: From Throw In | Event: Ball Receipt*",
 1333,15946,1333,c,55,LM,"(90.4, 28.6)","(88.0, 28.6)","Start position: (90.4, 28.6), End Position: (88.0, 28.6) | Time: 00:32:43.157 | Phase: From Throw In | Event: Carry",
 1334,15946,1334,c,55,LM,"(88.0, 28.6)","(None, None)","Start position: (88.0, 28.6) | Time: 00:32:43.813 | Phase: From Throw In | Event: Dispossessed",
-1335,15946,1335,m,55,RM,"(87.9, 28.5)","(None, None)","Start position: (87.9, 28.5) | Time: 00:32:43.813 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: {'id': 16, 'name': 'Success In Play'}", 
+1335,15946,1335,m,55,RM,"(87.9, 28.5)","(None, None)","Start position: (87.9, 28.5) | Time: 00:32:43.813 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: Success In Play",Success In Play
 1336,15946,1336,c,55,LDM,"(81.1, 27.8)","(93.0, 5.1)","Start position: (81.1, 27.8), End Position: (93.0, 5.1) | Time: 00:32:45.214 | Phase: From Throw In | Event: Pass",
 1337,15946,1337,c,55,LB,"(93.0, 5.1)","(None, None)","Start position: (93.0, 5.1) | Time: 00:32:46.378 | Phase: From Throw In | Event: Ball Receipt*",
 1338,15946,1338,c,55,LB,"(93.0, 5.1)","(93.0, 5.1)","Start position: (93.0, 5.1), End Position: (93.0, 5.1) | Time: 00:32:46.378 | Phase: From Throw In | Event: Carry",
@@ -1544,7 +1544,7 @@
 1542,15946,1542,c,64,LM,"(92.0, 24.2)","(None, None)","Start position: (92.0, 24.2) | Time: 00:39:05.684 | Phase: From Throw In | Event: Ball Receipt*",
 1543,15946,1543,c,64,LM,"(92.0, 24.2)","(92.2, 24.0)","Start position: (92.0, 24.2), End Position: (92.2, 24.0) | Time: 00:39:05.684 | Phase: From Throw In | Event: Carry",
 1544,15946,1544,c,64,LM,"(92.2, 24.0)","(None, None)","Start position: (92.2, 24.0) | Time: 00:39:05.986 | Phase: From Throw In | Event: Dispossessed",
-1545,15946,1545,m,64,RB,"(92.1, 23.9)","(None, None)","Start position: (92.1, 23.9) | Time: 00:39:05.986 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+1545,15946,1545,m,64,RB,"(92.1, 23.9)","(None, None)","Start position: (92.1, 23.9) | Time: 00:39:05.986 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 1546,15946,1546,c,64,LM,"(90.8, 17.2)","(101.6, 3.9)","Start position: (90.8, 17.2), End Position: (101.6, 3.9) | Time: 00:39:07.443 | Phase: From Throw In | Event: Pass",
 1547,15946,1547,c,64,LB,"(101.6, 3.9)","(None, None)","Start position: (101.6, 3.9) | Time: 00:39:08.214 | Phase: From Throw In | Event: Ball Receipt*",
 1548,15946,1548,c,64,LB,"(101.6, 3.9)","(101.6, 3.9)","Start position: (101.6, 3.9), End Position: (101.6, 3.9) | Time: 00:39:08.214 | Phase: From Throw In | Event: Carry",
@@ -1743,7 +1743,7 @@
 1741,15946,1741,c,74,CDM,"(84.5, 66.5)","(None, None)","Start position: (84.5, 66.5) | Time: 00:00:35.695 | Phase: From Kick Off | Event: Ball Receipt*",
 1742,15946,1742,c,74,CDM,"(84.5, 66.5)","(77.5, 67.1)","Start position: (84.5, 66.5), End Position: (77.5, 67.1) | Time: 00:00:35.695 | Phase: From Kick Off | Event: Carry",
 1743,15946,1743,c,74,CDM,"(77.5, 67.1)","(None, None)","Start position: (77.5, 67.1) | Time: 00:00:39.135 | Phase: From Kick Off | Event: Dispossessed",
-1744,15946,1744,m,74,LCM,"(77.4, 67.0)","(None, None)","Start position: (77.4, 67.0) | Time: 00:00:39.135 | Phase: From Kick Off | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+1744,15946,1744,m,74,LCM,"(77.4, 67.0)","(None, None)","Start position: (77.4, 67.0) | Time: 00:00:39.135 | Phase: From Kick Off | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 1745,15946,1745,c,74,RCB,"(45.6, 66.5)","(None, None)","Start position: (45.6, 66.5) | Time: 00:00:43.272 | Phase: From Kick Off | Event: Ball Recovery",
 1746,15946,1746,c,74,RCB,"(45.4, 64.6)","(54.8, 38.0)","Start position: (45.4, 64.6), End Position: (54.8, 38.0) | Time: 00:00:46.299 | Phase: From Kick Off | Event: Pass",
 1747,15946,1747,c,74,LCB,"(54.8, 38.0)","(None, None)","Start position: (54.8, 38.0) | Time: 00:00:47.425 | Phase: From Kick Off | Event: Ball Receipt*",
@@ -1787,7 +1787,7 @@
 1785,15946,1785,c,76,CF,"(87.5, 21.3)","(None, None)","Start position: (87.5, 21.3) | Time: 00:01:35.928 | Phase: Regular Play | Event: Ball Receipt*",
 1786,15946,1786,c,76,CF,"(87.5, 21.3)","(84.1, 24.8)","Start position: (87.5, 21.3), End Position: (84.1, 24.8) | Time: 00:01:35.928 | Phase: Regular Play | Event: Carry",
 1787,15946,1787,c,76,CF,"(84.1, 24.8)","(None, None)","Start position: (84.1, 24.8) | Time: 00:01:36.922 | Phase: Regular Play | Event: Dispossessed",
-1788,15946,1788,m,76,LCM,"(84.0, 24.7)","(None, None)","Start position: (84.0, 24.7) | Time: 00:01:36.922 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+1788,15946,1788,m,76,LCM,"(84.0, 24.7)","(None, None)","Start position: (84.0, 24.7) | Time: 00:01:36.922 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 1789,15946,1789,c,76,LCM,"(77.7, 25.8)","(None, None)","Start position: (77.7, 25.8) | Time: 00:01:38.136 | Phase: Regular Play | Event: Ball Recovery",
 1790,15946,1790,c,76,LCM,"(77.7, 25.8)","(78.3, 27.8)","Start position: (77.7, 25.8), End Position: (78.3, 27.8) | Time: 00:01:38.136 | Phase: Regular Play | Event: Carry",
 1791,15946,1791,c,76,LCM,"(78.3, 27.8)","(74.9, 27.3)","Start position: (78.3, 27.8), End Position: (74.9, 27.3) | Time: 00:01:38.981 | Phase: Regular Play | Event: Pass",
@@ -2004,7 +2004,7 @@
 2002,15946,2002,m,81,LM,"(37.8, 75.8)","(None, None)","Start position: (37.8, 75.8) | Time: 00:05:35.001 | Phase: From Goal Kick | Event: Ball Receipt*",
 2003,15946,2003,m,81,LM,"(37.8, 75.8)","(35.9, 76.9)","Start position: (37.8, 75.8), End Position: (35.9, 76.9) | Time: 00:05:35.001 | Phase: From Goal Kick | Event: Carry",
 2004,15946,2004,m,81,LM,"(35.9, 76.9)","(None, None)","Start position: (35.9, 76.9) | Time: 00:05:35.039 | Phase: From Goal Kick | Event: Dispossessed",
-2005,15946,2005,c,81,RB,"(36.0, 77.0)","(None, None)","Start position: (36.0, 77.0) | Time: 00:05:35.039 | Phase: From Goal Kick | Event: Duel | Type: Tackle | Outcome: {'id': 14, 'name': 'Lost Out'}", 
+2005,15946,2005,c,81,RB,"(36.0, 77.0)","(None, None)","Start position: (36.0, 77.0) | Time: 00:05:35.039 | Phase: From Goal Kick | Event: Duel | Type: Tackle | Outcome: Lost Out",Lost Out
 2006,15946,2006,m,82,LB,"(21.3, 79.9)","(2.5, 62.1)","Start position: (21.3, 79.9), End Position: (2.5, 62.1) | Time: 00:05:59.821 | Phase: From Throw In | Event: Pass",
 2007,15946,2007,m,82,LCM,"(2.5, 62.1)","(None, None)","Start position: (2.5, 62.1) | Time: 00:06:01.471 | Phase: From Throw In | Event: Ball Receipt*",
 2008,15946,2008,m,82,LCM,"(2.5, 62.1)","(3.4, 69.4)","Start position: (2.5, 62.1), End Position: (3.4, 69.4) | Time: 00:06:01.471 | Phase: From Throw In | Event: Carry",
@@ -2018,7 +2018,7 @@
 2016,15946,2016,m,82,LM,"(19.4, 68.7)","(None, None)","Start position: (19.4, 68.7) | Time: 00:06:10.405 | Phase: From Throw In | Event: Ball Receipt*",
 2017,15946,2017,m,82,LM,"(19.4, 68.7)","(20.0, 67.2)","Start position: (19.4, 68.7), End Position: (20.0, 67.2) | Time: 00:06:10.405 | Phase: From Throw In | Event: Carry",
 2018,15946,2018,m,82,LM,"(20.0, 67.2)","(None, None)","Start position: (20.0, 67.2) | Time: 00:06:11.149 | Phase: From Throw In | Event: Dribble | Outcome: Incomplete",Incomplete
-2019,15946,2019,c,83,RCM,"(20.1, 67.3)","(None, None)","Start position: (20.1, 67.3) | Time: 00:06:11.149 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 4, 'name': 'Won'}", 
+2019,15946,2019,c,83,RCM,"(20.1, 67.3)","(None, None)","Start position: (20.1, 67.3) | Time: 00:06:11.149 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Won",Won
 2020,15946,2020,c,83,RCM,"(20.1, 67.3)","(18.7, 68.6)","Start position: (20.1, 67.3), End Position: (18.7, 68.6) | Time: 00:06:11.149 | Phase: Regular Play | Event: Carry",
 2021,15946,2021,c,83,RCM,"(18.7, 68.6)","(22.5, 63.9)","Start position: (18.7, 68.6), End Position: (22.5, 63.9) | Time: 00:06:11.857 | Phase: Regular Play | Event: Pass",
 2022,15946,2022,c,83,RB,"(22.5, 63.9)","(None, None)","Start position: (22.5, 63.9) | Time: 00:06:12.458 | Phase: Regular Play | Event: Ball Receipt*",
@@ -2094,7 +2094,7 @@
 2092,15946,2092,c,84,LW,"(90.7, 28.2)","(None, None)","Start position: (90.7, 28.2) | Time: 00:07:18.666 | Phase: From Free Kick | Event: Ball Receipt*",
 2093,15946,2093,c,84,LW,"(90.7, 28.2)","(91.4, 28.0)","Start position: (90.7, 28.2), End Position: (91.4, 28.0) | Time: 00:07:18.666 | Phase: From Free Kick | Event: Carry",
 2094,15946,2094,c,84,LW,"(91.4, 28.0)","(None, None)","Start position: (91.4, 28.0) | Time: 00:07:19.430 | Phase: From Free Kick | Event: Dispossessed",
-2095,15946,2095,m,84,RB,"(91.3, 27.9)","(None, None)","Start position: (91.3, 27.9) | Time: 00:07:19.430 | Phase: From Free Kick | Event: Duel | Type: Tackle | Outcome: {'id': 16, 'name': 'Success In Play'}", 
+2095,15946,2095,m,84,RB,"(91.3, 27.9)","(None, None)","Start position: (91.3, 27.9) | Time: 00:07:19.430 | Phase: From Free Kick | Event: Duel | Type: Tackle | Outcome: Success In Play",Success In Play
 2096,15946,2096,m,84,CDM,"(87.6, 25.9)","(None, None)","Start position: (87.6, 25.9) | Time: 00:07:20.264 | Phase: From Free Kick | Event: Ball Recovery",
 2097,15946,2097,m,84,CDM,"(87.6, 25.9)","(81.2, 26.8)","Start position: (87.6, 25.9), End Position: (81.2, 26.8) | Time: 00:07:20.264 | Phase: From Free Kick | Event: Carry",
 2098,15946,2098,m,84,CDM,"(81.2, 26.8)","(76.5, 16.3)","Start position: (81.2, 26.8), End Position: (76.5, 16.3) | Time: 00:07:22.024 | Phase: From Free Kick | Event: Pass | Outcome: Incomplete",Incomplete
@@ -2113,7 +2113,7 @@
 2111,15946,2111,c,84,LW,"(92.0, 30.8)","(None, None)","Start position: (92.0, 30.8) | Time: 00:07:35.326 | Phase: From Free Kick | Event: Ball Receipt*",
 2112,15946,2112,c,84,LW,"(92.0, 30.8)","(90.7, 34.8)","Start position: (92.0, 30.8), End Position: (90.7, 34.8) | Time: 00:07:35.326 | Phase: From Free Kick | Event: Carry",
 2113,15946,2113,c,84,LW,"(90.7, 34.8)","(None, None)","Start position: (90.7, 34.8) | Time: 00:07:36.963 | Phase: From Free Kick | Event: Dispossessed",
-2114,15946,2114,m,84,CDM,"(90.6, 34.7)","(None, None)","Start position: (90.6, 34.7) | Time: 00:07:36.963 | Phase: From Free Kick | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+2114,15946,2114,m,84,CDM,"(90.6, 34.7)","(None, None)","Start position: (90.6, 34.7) | Time: 00:07:36.963 | Phase: From Free Kick | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 2115,15946,2115,c,84,CDM,"(82.0, 33.8)","(None, None)","Start position: (82.0, 33.8) | Time: 00:07:37.759 | Phase: From Free Kick | Event: Ball Recovery",
 2116,15946,2116,c,84,CDM,"(82.0, 33.8)","(84.5, 30.8)","Start position: (82.0, 33.8), End Position: (84.5, 30.8) | Time: 00:07:37.759 | Phase: From Free Kick | Event: Carry",
 2117,15946,2117,c,84,CDM,"(84.5, 30.8)","(101.0, 14.3)","Start position: (84.5, 30.8), End Position: (101.0, 14.3) | Time: 00:07:38.501 | Phase: From Free Kick | Event: Pass",
@@ -2264,7 +2264,7 @@
 2262,15946,2262,c,88,LW,"(99.3, 27.1)","(None, None)","Start position: (99.3, 27.1) | Time: 00:10:53.348 | Phase: From Corner | Event: Ball Receipt*",
 2263,15946,2263,c,88,LW,"(99.3, 27.1)","(99.7, 25.8)","Start position: (99.3, 27.1), End Position: (99.7, 25.8) | Time: 00:10:53.348 | Phase: From Corner | Event: Carry",
 2264,15946,2264,c,88,LW,"(99.7, 25.8)","(None, None)","Start position: (99.7, 25.8) | Time: 00:10:53.456 | Phase: From Corner | Event: Dispossessed",
-2265,15946,2265,m,88,RCM,"(99.6, 25.7)","(None, None)","Start position: (99.6, 25.7) | Time: 00:10:53.456 | Phase: From Corner | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+2265,15946,2265,m,88,RCM,"(99.6, 25.7)","(None, None)","Start position: (99.6, 25.7) | Time: 00:10:53.456 | Phase: From Corner | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 2266,15946,2266,c,88,LB,"(82.2, 29.5)","(None, None)","Start position: (82.2, 29.5) | Time: 00:10:55.461 | Phase: From Corner | Event: Ball Recovery",
 2267,15946,2267,c,88,LB,"(82.2, 29.5)","(80.5, 32.3)","Start position: (82.2, 29.5), End Position: (80.5, 32.3) | Time: 00:10:55.461 | Phase: From Corner | Event: Carry",
 2268,15946,2268,c,88,LB,"(80.5, 32.3)","(96.1, 8.7)","Start position: (80.5, 32.3), End Position: (96.1, 8.7) | Time: 00:11:00.113 | Phase: From Corner | Event: Pass",
@@ -2362,12 +2362,12 @@
 2360,15946,2360,c,92,LW,"(98.2, 15.8)","(None, None)","Start position: (98.2, 15.8) | Time: 00:13:28.742 | Phase: Regular Play | Event: Ball Receipt*",
 2361,15946,2361,c,92,LW,"(98.2, 15.8)","(110.4, 24.3)","Start position: (98.2, 15.8), End Position: (110.4, 24.3) | Time: 00:13:28.742 | Phase: Regular Play | Event: Carry",
 2362,15946,2362,c,92,LW,"(110.4, 24.3)","(None, None)","Start position: (110.4, 24.3) | Time: 00:13:32.706 | Phase: Regular Play | Event: Dispossessed",
-2363,15946,2363,m,92,RCM,"(110.3, 24.2)","(None, None)","Start position: (110.3, 24.2) | Time: 00:13:32.706 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 16, 'name': 'Success In Play'}", 
+2363,15946,2363,m,92,RCM,"(110.3, 24.2)","(None, None)","Start position: (110.3, 24.2) | Time: 00:13:32.706 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Success In Play",Success In Play
 2364,15946,2364,m,92,RB,"(110.7, 23.6)","(109.0, 16.3)","Start position: (110.7, 23.6), End Position: (109.0, 16.3) | Time: 00:13:33.708 | Phase: Regular Play | Event: Pass",
 2365,15946,2365,m,92,RCM,"(109.0, 16.3)","(None, None)","Start position: (109.0, 16.3) | Time: 00:13:35.597 | Phase: Regular Play | Event: Ball Receipt*",
 2366,15946,2366,m,92,RCM,"(109.0, 16.3)","(95.6, 11.2)","Start position: (109.0, 16.3), End Position: (95.6, 11.2) | Time: 00:13:35.597 | Phase: Regular Play | Event: Carry",
 2367,15946,2367,m,92,RCM,"(95.6, 11.2)","(None, None)","Start position: (95.6, 11.2) | Time: 00:13:37.817 | Phase: Regular Play | Event: Dribble | Outcome: Incomplete",Incomplete
-2368,15946,2368,c,92,LCM,"(95.7, 11.3)","(None, None)","Start position: (95.7, 11.3) | Time: 00:13:37.817 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 4, 'name': 'Won'}", 
+2368,15946,2368,c,92,LCM,"(95.7, 11.3)","(None, None)","Start position: (95.7, 11.3) | Time: 00:13:37.817 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Won",Won
 2369,15946,2369,c,92,LCM,"(95.7, 11.3)","(90.9, 6.2)","Start position: (95.7, 11.3), End Position: (90.9, 6.2) | Time: 00:13:37.817 | Phase: Regular Play | Event: Carry",
 2370,15946,2370,c,92,LCM,"(90.9, 6.2)","(85.8, 8.9)","Start position: (90.9, 6.2), End Position: (85.8, 8.9) | Time: 00:13:39.025 | Phase: Regular Play | Event: Pass",
 2371,15946,2371,c,92,LB,"(85.8, 8.9)","(None, None)","Start position: (85.8, 8.9) | Time: 00:13:39.959 | Phase: Regular Play | Event: Ball Receipt*",
@@ -2436,7 +2436,7 @@
 2434,15946,2434,c,96,CF,"(100.4, 29.0)","(None, None)","Start position: (100.4, 29.0) | Time: 00:15:34.102 | Phase: From Throw In | Event: Ball Receipt*",
 2435,15946,2435,c,96,CF,"(100.4, 29.0)","(101.2, 26.3)","Start position: (100.4, 29.0), End Position: (101.2, 26.3) | Time: 00:15:34.102 | Phase: From Throw In | Event: Carry",
 2436,15946,2436,c,96,CF,"(101.2, 26.3)","(None, None)","Start position: (101.2, 26.3) | Time: 00:15:35.447 | Phase: From Throw In | Event: Dispossessed",
-2437,15946,2437,m,96,CDM,"(101.1, 26.2)","(None, None)","Start position: (101.1, 26.2) | Time: 00:15:35.447 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+2437,15946,2437,m,96,CDM,"(101.1, 26.2)","(None, None)","Start position: (101.1, 26.2) | Time: 00:15:35.447 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 2438,15946,2438,c,96,LCM,"(99.5, 28.4)","(None, None)","Start position: (99.5, 28.4) | Time: 00:15:36.415 | Phase: From Throw In | Event: Ball Recovery",
 2439,15946,2439,c,96,LCM,"(100.0, 27.6)","(101.5, 28.5)","Start position: (100.0, 27.6), End Position: (101.5, 28.5) | Time: 00:15:36.455 | Phase: From Throw In | Event: Shot",
 2440,15946,2440,m,96,G,"(116.4, 37.8)","(None, None)","Start position: (116.4, 37.8) | Time: 00:15:37.040 | Phase: From Throw In | Event: Goal Keeper | Type: Shot Faced",
@@ -2591,7 +2591,7 @@
 2589,15946,2589,c,99,LB,"(93.5, 42.1)","(None, None)","Start position: (93.5, 42.1) | Time: 00:20:53.072 | Phase: Regular Play | Event: Ball Recovery",
 2590,15946,2590,c,99,LB,"(93.5, 42.1)","(94.6, 39.5)","Start position: (93.5, 42.1), End Position: (94.6, 39.5) | Time: 00:20:53.072 | Phase: Regular Play | Event: Carry",
 2591,15946,2591,c,99,LB,"(94.6, 39.5)","(None, None)","Start position: (94.6, 39.5) | Time: 00:20:54.230 | Phase: Regular Play | Event: Dispossessed",
-2592,15946,2592,m,99,RCM,"(94.5, 39.4)","(None, None)","Start position: (94.5, 39.4) | Time: 00:20:54.230 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+2592,15946,2592,m,99,RCM,"(94.5, 39.4)","(None, None)","Start position: (94.5, 39.4) | Time: 00:20:54.230 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 2593,15946,2593,c,99,RB,"(89.5, 55.4)","(94.8, 53.0)","Start position: (89.5, 55.4), End Position: (94.8, 53.0) | Time: 00:20:55.732 | Phase: Regular Play | Event: Pass",
 2594,15946,2594,c,99,RCM,"(94.8, 53.0)","(None, None)","Start position: (94.8, 53.0) | Time: 00:20:56.402 | Phase: Regular Play | Event: Ball Receipt*",
 2595,15946,2595,c,99,RCM,"(94.8, 53.0)","(95.2, 53.0)","Start position: (94.8, 53.0), End Position: (95.2, 53.0) | Time: 00:20:56.402 | Phase: Regular Play | Event: Carry",
@@ -2675,7 +2675,7 @@
 2673,15946,2673,c,103,LW,"(94.2, 34.6)","(None, None)","Start position: (94.2, 34.6) | Time: 00:23:28.289 | Phase: Regular Play | Event: Dribble | Outcome: Complete",Complete
 2674,15946,2674,c,103,LW,"(94.2, 34.6)","(100.8, 42.9)","Start position: (94.2, 34.6), End Position: (100.8, 42.9) | Time: 00:23:28.289 | Phase: Regular Play | Event: Carry",
 2675,15946,2675,c,103,LW,"(100.8, 42.9)","(None, None)","Start position: (100.8, 42.9) | Time: 00:23:29.391 | Phase: Regular Play | Event: Dribble | Outcome: Incomplete",Incomplete
-2676,15946,2676,m,103,LCB,"(100.7, 42.8)","(None, None)","Start position: (100.7, 42.8) | Time: 00:23:29.391 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 16, 'name': 'Success In Play'}", 
+2676,15946,2676,m,103,LCB,"(100.7, 42.8)","(None, None)","Start position: (100.7, 42.8) | Time: 00:23:29.391 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Success In Play",Success In Play
 2677,15946,2677,m,103,RB,"(104.8, 39.2)","(None, None)","Start position: (104.8, 39.2) | Time: 00:23:30.479 | Phase: Regular Play | Event: Clearance",
 2678,15946,2678,c,103,RCM,"(85.8, 43.8)","(None, None)","Start position: (85.8, 43.8) | Time: 00:23:32.640 | Phase: Regular Play | Event: Ball Recovery",
 2679,15946,2679,c,103,RCM,"(85.8, 43.8)","(88.5, 41.2)","Start position: (85.8, 43.8), End Position: (88.5, 41.2) | Time: 00:23:32.640 | Phase: Regular Play | Event: Carry",
@@ -2835,7 +2835,7 @@
 2833,15946,2833,m,114,RDM,"(65.6, 28.7)","(None, None)","Start position: (65.6, 28.7) | Time: 00:29:14.876 | Phase: From Counter | Event: Ball Receipt*",
 2834,15946,2834,m,114,RDM,"(65.6, 28.7)","(66.7, 28.7)","Start position: (65.6, 28.7), End Position: (66.7, 28.7) | Time: 00:29:14.876 | Phase: From Counter | Event: Carry",
 2835,15946,2835,m,114,RDM,"(66.7, 28.7)","(None, None)","Start position: (66.7, 28.7) | Time: 00:29:14.965 | Phase: From Counter | Event: Dispossessed",
-2836,15946,2836,c,114,LCM,"(66.8, 28.8)","(None, None)","Start position: (66.8, 28.8) | Time: 00:29:14.965 | Phase: From Counter | Event: Duel | Type: Tackle | Outcome: {'id': 13, 'name': 'Lost In Play'}", 
+2836,15946,2836,c,114,LCM,"(66.8, 28.8)","(None, None)","Start position: (66.8, 28.8) | Time: 00:29:14.965 | Phase: From Counter | Event: Duel | Type: Tackle | Outcome: Lost In Play",Lost In Play
 2837,15946,2837,m,114,RDM,"(52.6, 29.4)","(34.2, 48.6)","Start position: (52.6, 29.4), End Position: (34.2, 48.6) | Time: 00:29:16.769 | Phase: From Counter | Event: Pass | Outcome: Incomplete",Incomplete
 2838,15946,2838,c,115,RB,"(34.3, 48.7)","(None, None)","Start position: (34.3, 48.7) | Time: 00:29:17.960 | Phase: Regular Play | Event: Ball Recovery",
 2839,15946,2839,c,115,RB,"(34.3, 48.7)","(27.0, 46.8)","Start position: (34.3, 48.7), End Position: (27.0, 46.8) | Time: 00:29:17.960 | Phase: Regular Play | Event: Carry",
@@ -3134,7 +3134,7 @@
 3132,15946,3132,m,131,LDM,"(77.2, 49.3)","(None, None)","Start position: (77.2, 49.3) | Time: 00:39:37.566 | Phase: From Kick Off | Event: Ball Receipt*",
 3133,15946,3133,m,131,LDM,"(77.2, 49.3)","(74.0, 49.5)","Start position: (77.2, 49.3), End Position: (74.0, 49.5) | Time: 00:39:37.566 | Phase: From Kick Off | Event: Carry",
 3134,15946,3134,m,131,LDM,"(74.0, 49.5)","(None, None)","Start position: (74.0, 49.5) | Time: 00:39:38.521 | Phase: From Kick Off | Event: Dispossessed",
-3135,15946,3135,c,132,RCM,"(74.1, 49.6)","(None, None)","Start position: (74.1, 49.6) | Time: 00:39:38.521 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: {'id': 16, 'name': 'Success In Play'}", 
+3135,15946,3135,c,132,RCM,"(74.1, 49.6)","(None, None)","Start position: (74.1, 49.6) | Time: 00:39:38.521 | Phase: Regular Play | Event: Duel | Type: Tackle | Outcome: Success In Play",Success In Play
 3136,15946,3136,c,132,RW,"(82.8, 59.6)","(None, None)","Start position: (82.8, 59.6) | Time: 00:39:39.744 | Phase: Regular Play | Event: Ball Recovery",
 3137,15946,3137,c,132,RW,"(82.8, 59.6)","(104.9, 46.8)","Start position: (82.8, 59.6), End Position: (104.9, 46.8) | Time: 00:39:39.744 | Phase: Regular Play | Event: Carry",
 3138,15946,3138,c,132,RW,"(104.9, 46.8)","(106.1, 37.8)","Start position: (104.9, 46.8), End Position: (106.1, 37.8) | Time: 00:39:43.569 | Phase: Regular Play | Event: Pass",
@@ -3173,7 +3173,7 @@
 3171,15946,3171,c,134,LW,"(87.7, 13.4)","(None, None)","Start position: (87.7, 13.4) | Time: 00:40:50.948 | Phase: From Throw In | Event: Ball Receipt*",
 3172,15946,3172,c,134,LW,"(87.7, 13.4)","(100.4, 20.5)","Start position: (87.7, 13.4), End Position: (100.4, 20.5) | Time: 00:40:50.948 | Phase: From Throw In | Event: Carry",
 3173,15946,3173,c,134,LW,"(100.4, 20.5)","(None, None)","Start position: (100.4, 20.5) | Time: 00:40:54.330 | Phase: From Throw In | Event: Dispossessed",
-3174,15946,3174,m,134,RM,"(100.3, 20.4)","(None, None)","Start position: (100.3, 20.4) | Time: 00:40:54.330 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: {'id': 16, 'name': 'Success In Play'}", 
+3174,15946,3174,m,134,RM,"(100.3, 20.4)","(None, None)","Start position: (100.3, 20.4) | Time: 00:40:54.330 | Phase: From Throw In | Event: Duel | Type: Tackle | Outcome: Success In Play",Success In Play
 3175,15946,3175,m,134,G,"(117.8, 27.0)","(None, None)","Start position: (117.8, 27.0) | Time: 00:40:57.004 | Phase: From Throw In | Event: Ball Recovery",
 3176,15946,3176,m,134,G,"(117.8, 27.0)","(105.2, 36.6)","Start position: (117.8, 27.0), End Position: (105.2, 36.6) | Time: 00:40:57.004 | Phase: From Throw In | Event: Carry",
 3177,15946,3177,m,134,G,"(105.2, 36.6)","(35.7, 21.5)","Start position: (105.2, 36.6), End Position: (35.7, 21.5) | Time: 00:41:10.090 | Phase: From Throw In | Event: Pass | Outcome: Incomplete",Incomplete
@@ -3336,7 +3336,7 @@
 3334,15946,3334,c,138,RB,"(109.8, 62.0)","(None, None)","Start position: (109.8, 62.0) | Time: 00:44:09.480 | Phase: From Free Kick | Event: Ball Receipt*",
 3335,15946,3335,c,138,RB,"(109.8, 62.0)","(117.7, 60.1)","Start position: (109.8, 62.0), End Position: (117.7, 60.1) | Time: 00:44:09.480 | Phase: From Free Kick | Event: Carry",
 3336,15946,3336,c,138,RB,"(117.7, 60.1)","(None, None)","Start position: (117.7, 60.1) | Time: 00:44:10.429 | Phase: From Free Kick | Event: Dispossessed",
-3337,15946,3337,m,138,RCB,"(117.6, 60.0)","(None, None)","Start position: (117.6, 60.0) | Time: 00:44:10.429 | Phase: From Free Kick | Event: Duel | Type: Tackle | Outcome: {'id': 4, 'name': 'Won'}", 
+3337,15946,3337,m,138,RCB,"(117.6, 60.0)","(None, None)","Start position: (117.6, 60.0) | Time: 00:44:10.429 | Phase: From Free Kick | Event: Duel | Type: Tackle | Outcome: Won",Won
 3338,15946,3338,m,138,RCB,"(117.6, 60.0)","(115.4, 60.6)","Start position: (117.6, 60.0), End Position: (115.4, 60.6) | Time: 00:44:10.429 | Phase: From Free Kick | Event: Carry",
 3339,15946,3339,m,138,RCB,"(115.4, 60.6)","(90.0, 70.4)","Start position: (115.4, 60.6), End Position: (90.0, 70.4) | Time: 00:44:13.476 | Phase: From Free Kick | Event: Pass",
 3340,15946,3340,m,138,LCF,"(90.0, 70.4)","(None, None)","Start position: (90.0, 70.4) | Time: 00:44:15.366 | Phase: From Free Kick | Event: Ball Receipt*",

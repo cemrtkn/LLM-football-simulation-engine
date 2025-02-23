@@ -7,10 +7,10 @@ import json
 import ast
 
 
-data_path = "../data/small_sample.csv"
+data_path = "../data/small/"
 data = None
 
-event_df = pd.read_csv(data_path)
+event_df = pd.read_csv(data_path + '15956.csv')
 event_df['start_loc'] = event_df['start_loc'].apply(ast.literal_eval)
 event_df['end_loc'] = event_df['end_loc'].apply(ast.literal_eval)
 

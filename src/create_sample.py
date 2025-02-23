@@ -10,7 +10,7 @@ def team_to_color(events):
         team_id = str(event['team']['id'])
         if team_id not in teams:
             teams.append(team_id)
-        if len(team_id) == 2:
+        if len(teams) == 2:
             break
     mapping = {teams[0]: 'c', teams[1]: 'm'}
     return mapping
@@ -36,12 +36,13 @@ def outcome_catcher(text):
     return outcome
 
 
-matches_dir = '../data/big_sample/'
+matches_dir = '../data/big/'
 save_path = "../data/small/"
 
 allowed_events = ['Shot', 'Pass', 'Ball Receipt*', 'Ball Recovery', 'Miscontrol', 'Dispossessed', 'Interception', 'Duel', 'Clearance', 'Dribble', 'Carry', 'Goal Keeper', 'Foul Committed']
 
 for match_file in os.listdir(matches_dir):
+    print(match_file)
     small_events = {'match_id': [], 'event_id': [], 'team_color': [], 'possession_id': [], 'player_pos': [] ,'start_loc': [], 'end_loc': [] ,'text': [], 'outcome': []}
 
     match_id = match_file.split('.')[0]
@@ -55,6 +56,7 @@ for match_file in os.listdir(matches_dir):
             team_id = str(event['team']['id'])
             possession_idx = event['possession']
             player_pos = "".join(word[0] for word in event['position']['name'].split())
+            team_color = color_mapping[team_id]
 
             text = None
             outcome = None
@@ -76,6 +78,10 @@ for match_file in os.listdir(matches_dir):
             elif event_type == "Ball Receipt*" and event.get("ball_receipt") is not None:
                 outcome = event['ball_receipt']['outcome']['name']
                 text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+            
+            elif event_type == "Shot" and event.get("shot") is not None:
+                outcome = event['shot']['outcome']['name']
+                text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
 
             elif event_type == "Pass" and event['pass'].get("outcome") is not None:
                 outcome = event['pass']['outcome']['name']
@@ -93,7 +99,17 @@ for match_file in os.listdir(matches_dir):
             
 
             # Add position info
-            x, y = event['location']
+            if event.get('location'):
+                x, y = event['location']
+            elif(event.get('location') is None) and (event_type == 'Goal Keeper'):
+                if team_color == 'm':
+                    x = 120
+                    y = 40
+                elif team_color == 'c':
+                    x = 0
+                    y = 40
+                print(x,y,team_color)
+
             x, y = coordinate_inverter(color_mapping, team_id, x, y)
             sub_key = "_".join(event_type.lower().split())
 
@@ -114,7 +130,7 @@ for match_file in os.listdir(matches_dir):
 
             small_events['match_id'].append(match_id)
             small_events['event_id'].append(len(small_events['event_id']))
-            small_events['team_color'].append(color_mapping[team_id])
+            small_events['team_color'].append(team_color)
             small_events['possession_id'].append(possession_idx)
             small_events['player_pos'].append(player_pos)
             small_events['start_loc'].append((x,y))

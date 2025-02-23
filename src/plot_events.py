@@ -3,14 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from mplsoccer import Pitch
-import json
 import ast
 
 
 data_path = "../data/small/"
-data = None
 
-event_df = pd.read_csv(data_path + '15956.csv')
+event_df = pd.read_csv(data_path + '7430.csv')
 event_df['start_loc'] = event_df['start_loc'].apply(ast.literal_eval)
 event_df['end_loc'] = event_df['end_loc'].apply(ast.literal_eval)
 
@@ -39,6 +37,8 @@ def update(frame):
     player_pos = event['player_pos']
     text = event['text']
     outcome = event['outcome']
+    print(team_color)
+    print(x,y)
 
     ball_marker.set_data([x], [y])
     ball_marker.set_color(team_color)
@@ -65,6 +65,8 @@ def update(frame):
 
     return ball_marker, ball_text, popup_text, arrow
 
-# Animate with 2s delay between frames
-ani = FuncAnimation(fig, update, frames=len(event_df), interval=2000, repeat=True)
-plt.show()
+
+if __name__ == "__main__":
+    # Animate with 2s delay between frames
+    ani = FuncAnimation(fig, update, frames=len(event_df), interval=2000, repeat=True)
+    plt.show()

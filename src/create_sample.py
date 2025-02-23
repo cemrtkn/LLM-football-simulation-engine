@@ -1,20 +1,108 @@
 import json
+import os
+import pandas as pd
+import numpy as np
 
-full_file_path = "/Users/cemerturkan/Downloads/15946.json"
+def team_to_color(events):
+    teams = []
+    for event in events:
+        team_id = str(event['team']['id'])
+        if team_id not in teams:
+            teams.append(team_id)
+        if len(team_id) == 2:
+            break
+    mapping = {teams[0]: 'c', teams[1]: 'm'}
+    return mapping
+def coordinate_inverter(mapping, team_id, x, y):
+    # event coordinates come for both teams relative to their goal
+    teams = list(mapping.keys())
+    if team_id == teams[1]:
+        x = 120-x
+        y = 80-y
+    x = np.round(x, decimals=2)
+    y = np.round(y, decimals=2)
+    return x,y
 
-with open(full_file_path, "r") as file:
-    data = json.load(file)
+matches_dir = '../data/big_sample/'
 
 
-save_path = "../data/small_sample.json"
+save_path = "../data/small_sample.csv"
 
 allowed_events = ['Shot', 'Pass', 'Ball Receipt*', 'Ball Recovery', 'Miscontrol', 'Dispossessed', 'Interception', 'Duel', 'Clearance', 'Dribble', 'Carry', 'Goal Keeper', 'Foul Committed']
-small_events = []
+small_events = {'match_id': [], 'event_id': [], 'possession_id': [], 'text': []}
 
-for event in data:
-    if event['type']['name'] in allowed_events:
+for match_file in os.listdir(matches_dir):
 
-        small_events.append(event)
+    match_id = match_file.split('.')[0]
+    with open(matches_dir + match_file , "r") as file:
+        data = json.load(file)
+    color_mapping = team_to_color(data)
+
+    for event in data:
+        event_type = event['type']['name']
+        if event_type in allowed_events:
+            team_id = str(event['team']['id'])
+            possession_idx = event['possession']
+            player_pos = "".join(word[0] for word in event['position']['name'].split())
+
+            text = None
+            outcome = None
+
+            if event_type == "Goal Keeper":
+                text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['goalkeeper']['type']['name']}"
+
+            elif event_type == "Duel":
+                if event['duel']['type']['name'] == "Aerial Lost":
+                    text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']}"
+                
+                elif event['duel']['type']['name'] == "Tackle":
+                    outcome = event['duel']['outcome']
+                    text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Type: {event['duel']['type']['name']} | Outcome: {outcome}"
         
-with open(save_path, "w") as file:
-    json.dump(small_events, file, indent=4)
+            elif event_type == "Ball Receipt*" and event.get("ball_receipt") is not None:
+                outcome = event['ball_receipt']['outcome']['name']
+                text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+
+            elif event_type == "Pass" and event['pass'].get("outcome") is not None:
+                outcome = event['pass']['outcome']['name']
+                text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+
+            elif event_type == "Interception" and event['interception'].get("outcome") is not None:
+                outcome = event['interception']['outcome']['name']
+                text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+            
+            elif event_type == "Dribble" and event['dribble'].get("outcome") is not None:
+                outcome = event['dribble']['outcome']['name']
+                text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type} | Outcome: {outcome}"
+            else:
+                text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type}"
+            
+
+            # Add position info
+            x, y = event['location']
+            x, y = coordinate_inverter(color_mapping, team_id, x, y)
+            sub_key = "_".join(event_type.lower().split())
+
+            if (event.get(sub_key) is not None) and (event[sub_key].get('end_location') is not None):
+
+                end_coord_list = list(event["_".join(event_type.lower().split())].get('end_location'))
+                x_end = end_coord_list[0]
+                y_end = end_coord_list[1]
+
+                x_end, y_end = coordinate_inverter(color_mapping, team_id, x_end, y_end)
+
+                text = f"Start position: ({x}, {y}), End Position: ({x_end}, {y_end}) | " + text
+
+
+            elif text != None:
+                text = f"Start position: ({x}, {y}) | " + text
+
+            {'match_id': [], 'event_id': [], 'possession_id': [], 'text': [], 'outcome': []}
+            small_events['match_id'].append(match_id)
+            small_events['event_id'].append(len(small_events['event_id']))
+            small_events['possession_id'].append(possession_idx)
+            small_events['text'].append(text)
+
+
+small_events_df = pd.DataFrame(small_events)
+small_events_df.to_csv(save_path)

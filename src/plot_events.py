@@ -60,7 +60,8 @@ def update(frame):
 
     ball_text.set_position((x, y))
     ball_text.set_text(player_pos)
-
+    
+    # Turn event into text
     event_type = event['type']['name']
     outcome = None
     if event_type == "Goal Keeper":
@@ -93,6 +94,8 @@ def update(frame):
         text = f"Time: {event['timestamp']} | Phase: {event['play_pattern']['name']} | Event: {event_type}"
 
     
+
+    # Add position info
     sub_key = "_".join(event_type.lower().split())
     if (event.get(sub_key) is not None) and (event[sub_key].get('end_location') is not None):
         end_coord_list = list(event["_".join(event_type.lower().split())].get('end_location'))

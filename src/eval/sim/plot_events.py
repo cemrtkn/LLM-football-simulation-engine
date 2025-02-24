@@ -7,7 +7,7 @@ import ast
 import re
 
 
-data_path = "../data/small/"
+data_path = "../../../data/small/"
 
 
 def possession_team_catcher(text):

@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ray-submitter
+spec:
+  volumes:
+    - name: your-local-temp-folder
+      emptyDir: {}
+    - name: ceph
+      hostPath:
+        path: /mnt/ceph/storage
+  containers:
+    - name: my-manual-script
+      image: python:3.10
+#      ports:
+#        - containerPort: 1234
+      command:
+      - 'sh'
+      - '-c'
+      - |
+        echo Hello, Kubernetes!
+        touch /keep-running
+        apt-get update
+        apt install -y htop nano tmux
+        pip3 install ray
+        while [ -e /keep-running ]; do
+          sleep 60;
+        done
+        echo Bye!
+      volumeMounts:
+      - name: your-local-temp-folder
+        mountPath: /tempdata
+      - name: ceph
+        mountPath: /data/ceph/storage

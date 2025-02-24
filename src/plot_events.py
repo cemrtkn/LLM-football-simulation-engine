@@ -4,11 +4,24 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from mplsoccer import Pitch
 import ast
+import re
 
 
 data_path = "../data/small/"
 
-event_df = pd.read_csv(data_path + '7430.csv')
+
+def possession_team_catcher(text):
+    possession_team_pattern = r"Possession:\s*([\w]+(?:\s[\w]+)*)"
+
+    match = re.search(possession_team_pattern, text)
+    if match:
+        possession_team = match.group(1)
+    else:
+        possession_team = None
+    
+    return possession_team
+
+event_df = pd.read_csv(data_path + '3879600.csv')
 event_df['start_loc'] = event_df['start_loc'].apply(ast.literal_eval)
 event_df['end_loc'] = event_df['end_loc'].apply(ast.literal_eval)
 
@@ -27,16 +40,17 @@ popup_text = ax.text(50, 85, '', ha='center', va='center', fontsize=12, color='w
 arrow = ax.annotate("", xy=(0, 0), xytext=(0, 0),
                     arrowprops=dict(arrowstyle="->", color="white", lw=2))
 
+color_mapping = {'TeamA': 'c', 'TeamB': 'm'}
 
 def update(frame):
 
     event = event_df.iloc[frame]
     x,y = event['start_loc'][0], event['start_loc'][1]
     x_end,y_end = event['end_loc'][0], event['end_loc'][1]
-    team_color = event['team_color']
     player_pos = event['player_pos']
     text = event['text']
     outcome = event['outcome']
+    team_color = color_mapping[possession_team_catcher(text)]
     print(team_color)
     print(x,y)
 

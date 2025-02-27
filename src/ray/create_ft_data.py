@@ -5,8 +5,8 @@ from ray.util.actor_pool import ActorPool
 
 ray.init(ignore_reinit_error=True)
 
-path_to_match = "/mnt/ceph/storage/data-tmp/current/kavo1286/personal/small/"
-path_to_save = "/mnt/ceph/storage/data-tmp/current/kavo1286/personal/ft_data/"
+path_to_match = "/mnt/ceph/storage/data-tmp/current/kavo1286/personal/data/small/"
+path_to_save = "/mnt/ceph/storage/data-tmp/current/kavo1286/personal/data/ft_data/"
 
 @ray.remote
 class FileProcessor:

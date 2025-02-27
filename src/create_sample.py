@@ -39,7 +39,7 @@ def outcome_catcher(text):
 matches_dir = '../data/big/'
 save_path = "../data/small/"
 
-allowed_events = ['Shot', 'Pass', 'Ball Receipt*', 'Ball Recovery', 'Miscontrol', 'Dispossessed', 'Interception', 'Duel', 'Clearance', 'Dribble', 'Carry', 'Goal Keeper', 'Foul Committed']
+allowed_events = ['Shot', 'Pass', 'Ball Receipt*', 'Ball Recovery', 'Miscontrol', 'Dispossessed', 'Interception', 'Duel', 'Clearance', 'Dribble', 'Carry', 'Goal Keeper', 'Foul Committed', "Half End", "Half Start"]
 
 for match_file in os.listdir(matches_dir):
     print(match_file)
@@ -54,77 +54,85 @@ for match_file in os.listdir(matches_dir):
         event_type = event['type']['name']
         if event_type in allowed_events:
             team_id = str(event['team']['id'])
-            possession_idx = event['possession']
-            player_pos = "".join(word[0] for word in event['position']['name'].split())
-            team_generic_name = generic_name_mapping[team_id]
-
             text = None
             outcome = None
             x,y = None, None
             x_end,y_end = None, None
+            team_generic_name = generic_name_mapping[team_id]
+            possession_idx = event.get('possession')
+            player_pos = None
 
+            if event_type in ["Half End", "Half Start"]: 
+                if team_id == list(generic_name_mapping.keys())[0]:# take only one of the 2 events for half end(s) start(s)
+                    text = f"Time: {event['timestamp']} | Event: {event_type}"
+                else:
+                    continue # skip the duplicate
 
-            if event_type == "Goal Keeper":
-                text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Type: {event['goalkeeper']['type']['name']}"
-
-            elif event_type == "Duel":
-                if event['duel']['type']['name'] == "Aerial Lost":
-                    text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Type: {event['duel']['type']['name']}"
-                
-                elif event['duel']['type']['name'] == "Tackle":
-                    outcome = event['duel']['outcome']['name'] # special for tackle
-                    text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Type: {event['duel']['type']['name']} | Outcome: {outcome}"
-        
-            elif event_type == "Ball Receipt*" and event.get("ball_receipt") is not None:
-                outcome = event['ball_receipt']['outcome']['name']
-                text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Outcome: {outcome}"
-            
-            elif event_type == "Shot" and event.get("shot") is not None:
-                outcome = event['shot']['outcome']['name']
-                text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Outcome: {outcome}"
-
-            elif event_type == "Pass" and event['pass'].get("outcome") is not None:
-                outcome = event['pass']['outcome']['name']
-                text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Outcome: {outcome}"
-
-            elif event_type == "Interception" and event['interception'].get("outcome") is not None:
-                outcome = event['interception']['outcome']['name']
-                text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Outcome: {outcome}"
-            
-            elif event_type == "Dribble" and event['dribble'].get("outcome") is not None:
-                outcome = event['dribble']['outcome']['name']
-                text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Outcome: {outcome}"
             else:
-                text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type}"
+                pos_dict = event.get('position')
+                player_pos = "".join(word[0] for word in pos_dict.get('name').split()) 
+
+                if event_type == "Goal Keeper":
+                    text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Type: {event['goalkeeper']['type']['name']}"
+
+                elif event_type == "Duel":
+                    if event['duel']['type']['name'] == "Aerial Lost":
+                        text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Type: {event['duel']['type']['name']}"
+                    
+                    elif event['duel']['type']['name'] == "Tackle":
+                        outcome = event['duel']['outcome']['name'] # special for tackle
+                        text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Type: {event['duel']['type']['name']} | Outcome: {outcome}"
             
+                elif event_type == "Ball Receipt*" and event.get("ball_receipt") is not None:
+                    outcome = event['ball_receipt']['outcome']['name']
+                    text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Outcome: {outcome}"
+                
+                elif event_type == "Shot" and event.get("shot") is not None:
+                    outcome = event['shot']['outcome']['name']
+                    text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Outcome: {outcome}"
 
-            # Add position info
-            if event.get('location'):
-                x, y = event['location']
-            elif(event.get('location') is None) and (event_type == 'Goal Keeper'): # add location to saves
-                if team_generic_name == 'TeamA':
-                    x = 0
-                    y = 40
-                elif team_generic_name == 'TeamB':
-                    x = 120
-                    y = 40
+                elif event_type == "Pass" and event['pass'].get("outcome") is not None:
+                    outcome = event['pass']['outcome']['name']
+                    text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Outcome: {outcome}"
 
-            x, y = coordinate_inverter(generic_name_mapping, team_id, x, y)
-            sub_key = "_".join(event_type.lower().split())
+                elif event_type == "Interception" and event['interception'].get("outcome") is not None:
+                    outcome = event['interception']['outcome']['name']
+                    text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Outcome: {outcome}"
+                
+                elif event_type == "Dribble" and event['dribble'].get("outcome") is not None:
+                    outcome = event['dribble']['outcome']['name']
+                    text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type} | Outcome: {outcome}"
+                else:
+                    text = f"Time: {event['timestamp']} | Possession: {team_generic_name} | Phase: {event['play_pattern']['name']} | Player Position: {player_pos} | Event: {event_type}"
+                
 
-            if (event.get(sub_key) is not None) and (event[sub_key].get('end_location') is not None):
+                # Add position info
+                if event.get('location'):
+                    x, y = event['location']
+                elif(event.get('location') is None) and (event_type == 'Goal Keeper'): # add location to saves
+                    if team_generic_name == 'TeamA':
+                        x = 0
+                        y = 40
+                    elif team_generic_name == 'TeamB':
+                        x = 120
+                        y = 40
 
-                end_coord_list = list(event["_".join(event_type.lower().split())].get('end_location'))
-                x_end = end_coord_list[0]
-                y_end = end_coord_list[1]
+                x, y = coordinate_inverter(generic_name_mapping, team_id, x, y)
+                sub_key = "_".join(event_type.lower().split())
 
-                x_end, y_end = coordinate_inverter(generic_name_mapping, team_id, x_end, y_end)
+                if (event.get(sub_key) is not None) and (event[sub_key].get('end_location') is not None):
 
-                text = f"Start position: ({x}, {y}), End Position: ({x_end}, {y_end}) | " + text
+                    end_coord_list = list(event["_".join(event_type.lower().split())].get('end_location'))
+                    x_end = end_coord_list[0]
+                    y_end = end_coord_list[1]
+
+                    x_end, y_end = coordinate_inverter(generic_name_mapping, team_id, x_end, y_end)
+
+                    text = f"Start position: ({x}, {y}), End Position: ({x_end}, {y_end}) | " + text
 
 
-            elif text != None:
-                text = f"Start position: ({x}, {y}) | " + text
+                elif text != None:
+                    text = f"Start position: ({x}, {y}) | " + text
 
 
             small_events['match_id'].append(match_id)

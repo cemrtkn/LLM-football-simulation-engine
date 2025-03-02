@@ -8,4 +8,7 @@ data_files = (file for file in os.listdir(path_to_parquet) if file.endswith('par
 
 for file in data_files:
     df = pd.read_parquet(path_to_parquet + file, engine='pyarrow')
-    print(df.head())
+    print(df['text'][1])
+    print("-" *40)
+    print(df['text'][2])
+    break

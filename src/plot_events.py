@@ -21,7 +21,7 @@ def possession_team_catcher(text):
     
     return possession_team
 
-event_df = pd.read_csv(data_path + '3879600.csv')
+event_df = pd.read_csv(data_path + '15956.csv')
 event_df['start_loc'] = event_df['start_loc'].apply(ast.literal_eval)
 event_df['end_loc'] = event_df['end_loc'].apply(ast.literal_eval)
 
@@ -43,7 +43,7 @@ arrow = ax.annotate("", xy=(0, 0), xytext=(0, 0),
 color_mapping = {'TeamA': 'c', 'TeamB': 'm'}
 
 def update(frame):
-
+    frame += 1 # skip the first event which is the half start
     event = event_df.iloc[frame]
     x,y = event['start_loc'][0], event['start_loc'][1]
     x_end,y_end = event['end_loc'][0], event['end_loc'][1]
@@ -51,8 +51,6 @@ def update(frame):
     text = event['text']
     outcome = event['outcome']
     team_color = color_mapping[possession_team_catcher(text)]
-    print(team_color)
-    print(x,y)
 
     ball_marker.set_data([x], [y])
     ball_marker.set_color(team_color)
@@ -82,5 +80,5 @@ def update(frame):
 
 if __name__ == "__main__":
     # Animate with 2s delay between frames
-    ani = FuncAnimation(fig, update, frames=len(event_df), interval=2000, repeat=True)
+    ani = FuncAnimation(fig, update, frames=len(event_df)-1, interval=2000, repeat=True)
     plt.show()

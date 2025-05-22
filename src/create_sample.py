@@ -39,17 +39,23 @@ def outcome_catcher(text):
 matches_dir = '../data/big/'
 save_path = "../data/small/"
 
-allowed_events = ['Shot', 'Pass', 'Ball Receipt*', 'Ball Recovery', 'Miscontrol', 'Dispossessed', 'Interception', 'Duel', 'Clearance', 'Dribble', 'Carry', 'Goal Keeper', 'Foul Committed', "Half End", "Half Start"]
+allowed_events = ['Shot', 'Pass', 'Ball Receipt*', 'Ball Recovery',
+                  'Miscontrol', 'Dispossessed', 'Interception', 'Duel',
+                  'Clearance', 'Dribble', 'Carry', 'Goal Keeper',
+                  'Foul Committed', "Half End", "Half Start"]
 
 for match_file in os.listdir(matches_dir):
     print(match_file)
-    small_events = {'match_id': [], 'event_id': [], 'team_name': [], 'possession_id': [], 'player_pos': [] ,'start_loc': [], 'end_loc': [] ,'text': [], 'outcome': []}
+    small_events = {'match_id': [], 'event_id': [], 'team_name': [],
+                    'possession_id': [], 'player_pos': [] ,'start_loc': [],
+                    'end_loc': [] ,'text': [], 'outcome': []}
 
     match_id = match_file.split('.')[0]
     with open(matches_dir + match_file , "r") as file:
         data = json.load(file)
     generic_name_mapping = team_to_generic(data)
 
+    print(len(data))
     for event in data:
         event_type = event['type']['name']
         if event_type in allowed_events:

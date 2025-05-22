@@ -26,7 +26,7 @@ event_df['start_loc'] = event_df['start_loc'].apply(ast.literal_eval)
 event_df['end_loc'] = event_df['end_loc'].apply(ast.literal_eval)
 
 # Initialize the pitch
-fig, ax = plt.subplots(figsize=(10, 6))
+fig, ax = plt.subplots(figsize=(15, 9))
 pitch = Pitch(pitch_type='statsbomb', pitch_color='grass', line_color='white',pitch_length=120, pitch_width=80)
 pitch.draw(ax=ax)
 
@@ -80,5 +80,7 @@ def update(frame):
 
 if __name__ == "__main__":
     # Animate with 2s delay between frames
-    ani = FuncAnimation(fig, update, frames=len(event_df)-1, interval=2000, repeat=True)
+    frames = len(event_df)-1
+    ani = FuncAnimation(fig, update, frames=10, interval=2000, repeat=True)
     plt.show()
+    ani.save("match_animation.gif", writer='pillow')

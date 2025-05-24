@@ -38,6 +38,7 @@ def calculate_stats(gts, preds):
     total_end_distance = 0
 
     unmatching_end_pos = 0
+    unmatching_start_pos = 0
 
     possession_true = 0
     phase_true = 0
@@ -56,8 +57,13 @@ def calculate_stats(gts, preds):
         if gt == {}:
             continue
         total_time_diff += time_diff(gt, pred)
-        total_start_distance += euclidean_distance(gt, pred, start = True)
+        start_distance = euclidean_distance(gt, pred, start = True)
         end_distance = euclidean_distance(gt, pred, start = False)
+
+        if start_distance is None:
+            unmatching_start_pos += 1
+        else:
+            total_start_distance += start_distance
 
         if end_distance is None:
             unmatching_end_pos += 1

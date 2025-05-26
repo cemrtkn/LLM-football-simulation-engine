@@ -7,7 +7,9 @@ import ast
 import re
 
 
-data_path = "../../../data/small/"
+# data_path = "../../../data/small/"
+data_path = "../"
+
 
 
 def possession_team_catcher(text):
@@ -21,7 +23,7 @@ def possession_team_catcher(text):
     
     return possession_team
 
-event_df = pd.read_csv(data_path + '15956.csv')
+event_df = pd.read_csv(data_path + 'generated_events_df.csv')
 event_df['start_loc'] = event_df['start_loc'].apply(ast.literal_eval)
 event_df['end_loc'] = event_df['end_loc'].apply(ast.literal_eval)
 
@@ -81,6 +83,6 @@ def update(frame):
 if __name__ == "__main__":
     # Animate with 2s delay between frames
     frames = len(event_df)-1
-    ani = FuncAnimation(fig, update, frames=10, interval=2000, repeat=True)
-    plt.show()
-    ani.save("match_animation.gif", writer='pillow')
+    ani = FuncAnimation(fig, update, frames=100, interval=2000, repeat=True)
+    #plt.show()
+    ani.save("generated_match_animation.gif", writer='pillow')

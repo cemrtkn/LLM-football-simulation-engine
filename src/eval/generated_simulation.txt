@@ -1,0 +1,102 @@
+This is a sequence of football match events.
+Time: 00:00:00.000 | Event: Half Start
+Start position: (60.0, 40.0), End Position: (45.0, 31.0) | Time: 00:00:01.788 | Possession: TeamA | Phase: From Kick Off | Player Position: CF | Event: Pass
+Start position: (45.0, 31.0) | Time: 00:00:02.920 | Possession: TeamA | Phase: From Kick Off | Player Position: CDM | Event: Ball Receipt*
+Start position: (45.0, 31.0), End Position: (44.0, 31.0) | Time: 00:00:02.920 | Possession: TeamA | Phase: From Kick Off | Player Position: CDM | Event: Carry
+Start position: (44.0, 31.0), End Position: (11.0, 31.0) | Time: 00:00:03.771 | Possession: TeamA | Phase: From Kick Off | Player Position: CDM | Event: Pass
+Start position: (11.0, 31.0) | Time: 00:00:06.741 | Possession: TeamA | Phase: From Kick Off | Player Position: G | Event: Ball Receipt*
+Start position: (11.0, 31.0), End Position: (7.0, 36.0) | Time: 00:00:06.741 | Possession: TeamA | Phase: From Kick Off | Player Position: G | Event: Carry
+Start position: (7.0, 36.0), End Position: (31.0, 78.0) | Time: 00:00:08.487 | Possession: TeamA | Phase: From Kick Off | Player Position: G | Event: Pass
+Start position: (31.0, 78.0) | Time: 00:00:11.767 | Possession: TeamA | Phase: From Kick Off | Player Position: RB | Event: Ball Receipt*
+Start position: (31.0, 78.0), End Position: (32.0, 77.0) | Time: 00:00:11.767 | Possession: TeamA | Phase: From Kick Off | Player Position: RB | Event: Carry
+Start position: (32.0, 77.0) | Time: 00:00:12.288 | Possession: TeamA | Phase: From Kick Off | Player Position: RB | Event: Miscontrol
+Start position: (36.0, 79.0), End Position: (42.0, 71.0) | Time: 00:00:20.105 | Possession: TeamB | Phase: From Throw In | Player Position: LB | Event: Pass
+Start position: (42.0, 71.0) | Time: 00:00:22.085 | Possession: TeamB | Phase: From Throw In | Player Position: CAM | Event: Ball Receipt*
+Start position: (42.0, 71.0), End Position: (41.0, 71.0) | Time: 00:00:22.085 | Possession: TeamB | Phase: From Throw In | Player Position: CAM | Event: Carry
+Start position: (41.0, 71.0), End Position: (23.0, 61.0) | Time: 00:00:23.580 | Possession: TeamB | Phase: From Throw In | Player Position: CAM | Event: Pass | Outcome: Incomplete
+Start position: (22.0, 63.0) | Time: 00:00:25.623 | Possession: TeamB | Phase: From Throw In | Player Position: RW | Event: Ball Receipt* | Outcome: Incomplete
+Start position: (24.0, 62.0) | Time: 00:00:25.623 | Possession: TeamA | Phase: From Throw In | Player Position: RCM | Event: Ball Recovery
+Start position: (24.0, 62.0), End Position: (10.0, 61.0) | Time: 00:00:25.623 | Possession: TeamA | Phase: From Throw In | Player Position: RCM | Event: Carry
+Start position: (9.0, 60.0) | Time: 00:00:27.132 | Possession: TeamB | Phase: From Throw In | Player Position: RW | Event: Foul Committed
+Start position: (10.0, 62.0), End Position: (96.0, 53.0) | Time: 00:00:43.666 | Possession: TeamA | Phase: From Free Kick | Player Position: G | Event: Pass | Outcome: Incomplete
+Start position: (95.0, 52.0), End Position: (49.0, 78.0) | Time: 00:00:46.524 | Possession: TeamB | Phase: From Free Kick | Player Position: CB | Event: Pass | Outcome: Incomplete
+Start position: (50.0, 79.0) | Time: 00:00:49.792 | Possession: TeamA | Phase: From Free Kick | Player Position: RW | Event: Ball Recovery
+Start position: (50.0, 79.0), End Position: (70.0, 73.0) | Time: 00:00:49.792 | Possession: TeamA | Phase: From Free Kick | Player Position: RW | Event: Carry
+Start position: (70.0, 73.0), End Position: (108.0, 58.0) | Time: 00:00:52.692 | Possession: TeamA | Phase: From Free Kick | Player Position: RW | Event: Pass | Outcome: Incomplete
+Start position: (97.0, 64.0) | Time: 00:00:55.511 | Possession: TeamA | Phase: From Free Kick | Player Position: CF | Event: Ball Receipt* | Outcome: Incomplete
+Start position: (107.0, 57.0) | Time: 00:00:55.511 | Possession: TeamB | Phase: From Free Kick | Player Position: G | Event: Ball Recovery
+Start position: (107.0, 57.0), End Position: (100.0, 66.0) | Time: 00:00:55.511 | Possession: TeamB | Phase: From Free Kick | Player Position: G | Event: Carry
+Start position: (100.0, 66.0), End Position: (92.0, 76.0) | Time: 00:00:57.172 | Possession: TeamB | Phase: From Free Kick | Player Position: G | Event: Pass
+Start position: (92.0, 76.0) | Time: 00:00:58.029 | Possession: TeamB | Phase: From Free Kick | Player Position: LCB | Event: Ball Receipt*
+Start position: (92.0, 76.0), End Position: (92.0, 76.0) | Time: 00:00:58.029 | Possession: TeamB | Phase: From Free Kick | Player Position: LCB | Event: Carry
+Start position: (92.0, 76.0), End Position: (66.0, 79.0) | Time: 00:00:59.001 | Possession: TeamB | Phase: From Free Kick | Player Position: LCB | Event: Pass | Outcome: Out
+Start position: (67.0, 77.0) | Time: 00:01:00.163 | Possession: TeamB | Phase: From Free Kick | Player Position: LB | Event: Ball Receipt* | Outcome: Incomplete
+Start position: (73.0, 80.0), End Position: (84.0, 77.0) | Time: 00:01:04.596 | Possession: TeamA | Phase: From Throw In | Player Position: RW | Event: Pass
+Start position: (84.0, 77.0) | Time: 00:01:05.326 | Possession: TeamA | Phase: From Throw In | Player Position: CF | Event: Ball Receipt*
+Start position: (84.0, 77.0), End Position: (85.0, 79.0) | Time: 00:01:05.326 | Possession: TeamA | Phase: From Throw In | Player Position: CF | Event: Carry
+Start position: (85.0, 79.0), End Position: (104.0, 79.0) | Time: 00:01:05.366 | Possession: TeamA | Phase: From Throw In | Player Position: CF | Event: Pass | Outcome: Out
+Start position: (98.0, 79.0) | Time: 00:01:08.516 | Possession: TeamA | Phase: From Throw In | Player Position: RW | Event: Ball Receipt* | Outcome: Incomplete
+Start position: (97.0, 79.0), End Position: (78.0, 75.0) | Time: 00:01:14.885 | Possession: TeamB | Phase: From Throw In | Player Position: LB | Event: Pass | Outcome: Incomplete
+Start position: (78.0, 78.0) | Time: 00:01:17.366 | Possession: TeamA | Phase: From Throw In | Player Position: RCM | Event: Foul Committed
+Start position: (71.0, 73.0), End Position: (68.0, 48.0) | Time: 00:02:00.414 | Possession: TeamB | Phase: From Free Kick | Player Position: LDM | Event: Pass
+Start position: (68.0, 48.0) | Time: 00:02:01.744 | Possession: TeamB | Phase: From Free Kick | Player Position: RDM | Event: Ball Receipt*
+Start position: (68.0, 48.0), End Position: (51.0, 37.0) | Time: 00:02:01.933 | Possession: TeamB | Phase: From Free Kick | Player Position: RDM | Event: Pass
+Start position: (52.0, 38.0), End Position: (43.0, 41.0) | Time: 00:02:04.242 | Possession: TeamA | Phase: Regular Play | Player Position: LCB | Event: Pass
+Start position: (43.0, 41.0) | Time: 00:02:05.713 | Possession: TeamA | Phase: Regular Play | Player Position: RCB | Event: Ball Receipt*
+Start position: (43.0, 41.0), End Position: (43.0, 41.0) | Time: 00:02:05.713 | Possession: TeamA | Phase: Regular Play | Player Position: RCB | Event: Carry
+Start position: (43.0, 41.0), End Position: (55.0, 43.0) | Time: 00:02:05.833 | Possession: TeamA | Phase: Regular Play | Player Position: RCB | Event: Pass
+Start position: (55.0, 43.0) | Time: 00:02:06.509 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Ball Receipt*
+Start position: (55.0, 43.0), End Position: (55.0, 43.0) | Time: 00:02:06.509 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Carry
+Start position: (55.0, 43.0), End Position: (54.0, 42.0) | Time: 00:02:06.549 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Pass | Outcome: Incomplete
+Start position: (51.0, 42.0) | Time: 00:02:06.618 | Possession: TeamA | Phase: Regular Play | Player Position: RCM | Event: Ball Receipt* | Outcome: Incomplete
+Start position: (53.0, 41.0) | Time: 00:02:07.037 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Ball Recovery
+Start position: (53.0, 41.0), End Position: (55.0, 42.0) | Time: 00:02:07.037 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Carry
+Start position: (55.0, 42.0) | Time: 00:02:07.517 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Dribble | Outcome: Complete
+Start position: (55.0, 42.0), End Position: (60.0, 41.0) | Time: 00:02:07.517 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Carry
+Start position: (60.0, 41.0), End Position: (73.0, 41.0) | Time: 00:02:08.160 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Pass
+Start position: (73.0, 41.0) | Time: 00:02:09.652 | Possession: TeamB | Phase: Regular Play | Player Position: LCB | Event: Ball Receipt*
+Start position: (73.0, 41.0), End Position: (73.0, 41.0) | Time: 00:02:09.652 | Possession: TeamB | Phase: Regular Play | Player Position: LCB | Event: Carry
+Start position: (73.0, 41.0), End Position: (55.0, 51.0) | Time: 00:02:09.789 | Possession: TeamB | Phase: Regular Play | Player Position: LCB | Event: Pass
+Start position: (55.0, 51.0) | Time: 00:02:10.978 | Possession: TeamB | Phase: Regular Play | Player Position: LCF | Event: Ball Receipt*
+Start position: (55.0, 51.0), End Position: (55.0, 51.0) | Time: 00:02:10.978 | Possession: TeamB | Phase: Regular Play | Player Position: LCF | Event: Carry
+Start position: (55.0, 51.0), End Position: (63.0, 46.0) | Time: 00:02:11.087 | Possession: TeamB | Phase: Regular Play | Player Position: LCF | Event: Pass
+Start position: (63.0, 46.0) | Time: 00:02:12.454 | Possession: TeamB | Phase: Regular Play | Player Position: RDM | Event: Ball Receipt*
+Start position: (63.0, 46.0), End Position: (63.0, 46.0) | Time: 00:02:12.454 | Possession: TeamB | Phase: Regular Play | Player Position: RDM | Event: Carry
+Start position: (63.0, 46.0), End Position: (64.0, 20.0) | Time: 00:02:12.534 | Possession: TeamB | Phase: Regular Play | Player Position: RDM | Event: Pass
+Start position: (64.0, 20.0) | Time: 00:02:14.174 | Possession: TeamB | Phase: Regular Play | Player Position: RCB | Event: Ball Receipt*
+Start position: (64.0, 20.0), End Position: (64.0, 20.0) | Time: 00:02:14.174 | Possession: TeamB | Phase: Regular Play | Player Position: RCB | Event: Carry
+Start position: (64.0, 20.0), End Position: (15.0, 33.0) | Time: 00:02:15.672 | Possession: TeamB | Phase: Regular Play | Player Position: RCB | Event: Pass | Outcome: Incomplete
+Start position: (16.0, 35.0) | Time: 00:02:18.499 | Possession: TeamB | Phase: Regular Play | Player Position: RCF | Event: Ball Receipt* | Outcome: Incomplete
+Start position: (16.0, 34.0) | Time: 00:02:18.499 | Possession: TeamA | Phase: Regular Play | Player Position: G | Event: Goal Keeper | Type: Punch
+Start position: (20.0, 25.0), End Position: (42.0, 30.0) | Time: 00:02:26.408 | Possession: TeamA | Phase: Regular Play | Player Position: LDM | Event: Pass
+Start position: (44.0, 33.0) | Time: 00:02:29.136 | Possession: TeamA | Phase: Regular Play | Player Position: CF | Event: Ball Receipt* | Outcome: Incomplete
+Start position: (41.0, 28.0) | Time: 00:02:29.136 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Clearance
+Start position: (33.0, 1.0), End Position: (32.0, 17.0) | Time: 00:02:45.229 | Possession: TeamB | Phase: From Throw In | Player Position: RB | Event: Pass
+Start position: (32.0, 17.0) | Time: 00:02:47.719 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Ball Receipt*
+Start position: (32.0, 17.0), End Position: (31.0, 17.0) | Time: 00:02:47.719 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Carry
+Start position: (31.0, 17.0), End Position: (38.0, 8.0) | Time: 00:02:47.799 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Pass | Outcome: Incomplete
+Start position: (38.0, 6.0) | Time: 00:02:49.106 | Possession: TeamB | Phase: From Throw In | Player Position: RDM | Event: Ball Receipt* | Outcome: Incomplete
+Start position: (39.0, 9.0) | Time: 00:02:49.106 | Possession: TeamA | Phase: From Throw In | Player Position: CAM | Event: Interception | Outcome: Lost Out
+Start position: (38.0, 0.0), End Position: (38.0, 7.0) | Time: 00:02:55.995 | Possession: TeamB | Phase: From Throw In | Player Position: RB | Event: Pass
+Start position: (38.0, 7.0) | Time: 00:02:56.780 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Ball Receipt*
+Start position: (38.0, 7.0), End Position: (39.0, 11.0) | Time: 00:02:56.780 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Carry
+Start position: (39.0, 11.0), End Position: (71.0, 77.0) | Time: 00:02:58.628 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Pass | Outcome: Incomplete
+Start position: (68.0, 69.0) | Time: 00:03:03.928 | Possession: TeamB | Phase: From Throw In | Player Position: LB | Event: Ball Receipt* | Outcome: Incomplete
+Start position: (71.0, 77.0) | Time: 00:03:03.928 | Possession: TeamB | Phase: From Throw In | Player Position: LB | Event: Interception | Outcome: Lost Out
+Start position: (72.0, 80.0), End Position: (88.0, 75.0) | Time: 00:03:11.283 | Possession: TeamA | Phase: From Throw In | Player Position: RB | Event: Pass | Outcome: Incomplete
+Start position: (87.0, 74.0) | Time: 00:03:13.310 | Possession: TeamB | Phase: Regular Play | Player Position: LB | Event: Ball Recovery
+Start position: (87.0, 74.0), End Position: (87.0, 77.0) | Time: 00:03:13.310 | Possession: TeamB | Phase: Regular Play | Player Position: LB | Event: Carry
+Start position: (87.0, 77.0), End Position: (73.0, 75.0) | Time: 00:03:13.390 | Possession: TeamB | Phase: Regular Play | Player Position: LB | Event: Pass | Outcome: Incomplete
+Start position: (75.0, 73.0) | Time: 00:03:14.548 | Possession: TeamB | Phase: Regular Play | Player Position: CAM | Event: Ball Receipt* | Outcome: Incomplete
+Start position: (74.0, 76.0) | Time: 00:03:14.548 | Possession: TeamA | Phase: Regular Play | Player Position: RCM | Event: Interception | Outcome: Won
+Start position: (74.0, 76.0), End Position: (79.0, 77.0) | Time: 00:03:14.548 | Possession: TeamA | Phase: Regular Play | Player Position: RCM | Event: Carry
+Start position: (78.0, 76.0) | Time: 00:03:15.136 | Possession: TeamB | Phase: Regular Play | Player Position: LB | Event: Foul Committed
+Start position: (79.0, 77.0), End Position: (79.0, 77.0) | Time: 00:03:15.136 | Possession: TeamA | Phase: Regular Play | Player Position: RCM | Event: Carry
+Start position: (79.0, 77.0), End Position: (86.0, 52.0) | Time: 00:03:15.195 | Possession: TeamA | Phase: Regular Play | Player Position: RCM | Event: Pass
+Start position: (86.0, 52.0) | Time: 00:03:16.516 | Possession: TeamA | Phase: Regular Play | Player Position: RW | Event: Ball Receipt*
+Start position: (86.0, 52.0), End Position: (81.0, 52.0) | Time: 00:03:16.516 | Possession: TeamA | Phase: Regular Play | Player Position: RW | Event: Carry
+Start position: (81.0, 52.0), End Position: (75.0, 56.0) | Time: 00:03:17.656 | Possession: TeamA | Phase: Regular Play | Player Position: RW | Event: Pass
+Start position: (75.0, 56.0) | Time: 00:03:18.611 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Ball Receipt*
+Start position: (75.0, 56.0), End Position: (75.0, 56.0) | Time: 00:03:18.611 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Carry
+Start position: (75.0, 56.0), End Position: (79.0, 44.0) | Time: 00:03:18.831 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Pass
+Start position: (79.0, 44.0) | Time: 00:03:19.705 | Possession: TeamA | Phase: Regular Play | Player Position: LCM | Event: Ball Receipt*

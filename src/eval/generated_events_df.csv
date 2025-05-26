@@ -1,0 +1,231 @@
+start_x,start_y,end_x,end_y,time,team_name,phase,player_pos,event,outcome,type,text,start_loc,end_loc
+,,,,0:00:00,,,,Half Start,,,"Time: 00:00:00.000 | Event: Half Start
+","(None, None)","(None, None)"
+60.0,40.0,45.0,31.0,0:00:01.788000,TeamA ,From Kick Off ,CF ,Pass,,,"Start position: (60.0, 40.0), End Position: (45.0, 31.0) | Time: 00:00:01.788 | Possession: TeamA | Phase: From Kick Off | Player Position: CF | Event: Pass
+","(60.0, 40.0)","(45.0, 31.0)"
+45.0,31.0,,,0:00:02.920000,TeamA ,From Kick Off ,CDM ,Ball Receipt*,,,"Start position: (45.0, 31.0) | Time: 00:00:02.920 | Possession: TeamA | Phase: From Kick Off | Player Position: CDM | Event: Ball Receipt*
+","(45.0, 31.0)","(None, None)"
+45.0,31.0,44.0,31.0,0:00:02.920000,TeamA ,From Kick Off ,CDM ,Carry,,,"Start position: (45.0, 31.0), End Position: (44.0, 31.0) | Time: 00:00:02.920 | Possession: TeamA | Phase: From Kick Off | Player Position: CDM | Event: Carry
+","(45.0, 31.0)","(44.0, 31.0)"
+44.0,31.0,11.0,31.0,0:00:03.771000,TeamA ,From Kick Off ,CDM ,Pass,,,"Start position: (44.0, 31.0), End Position: (11.0, 31.0) | Time: 00:00:03.771 | Possession: TeamA | Phase: From Kick Off | Player Position: CDM | Event: Pass
+","(44.0, 31.0)","(11.0, 31.0)"
+11.0,31.0,,,0:00:06.741000,TeamA ,From Kick Off ,G ,Ball Receipt*,,,"Start position: (11.0, 31.0) | Time: 00:00:06.741 | Possession: TeamA | Phase: From Kick Off | Player Position: G | Event: Ball Receipt*
+","(11.0, 31.0)","(None, None)"
+11.0,31.0,7.0,36.0,0:00:06.741000,TeamA ,From Kick Off ,G ,Carry,,,"Start position: (11.0, 31.0), End Position: (7.0, 36.0) | Time: 00:00:06.741 | Possession: TeamA | Phase: From Kick Off | Player Position: G | Event: Carry
+","(11.0, 31.0)","(7.0, 36.0)"
+7.0,36.0,31.0,78.0,0:00:08.487000,TeamA ,From Kick Off ,G ,Pass,,,"Start position: (7.0, 36.0), End Position: (31.0, 78.0) | Time: 00:00:08.487 | Possession: TeamA | Phase: From Kick Off | Player Position: G | Event: Pass
+","(7.0, 36.0)","(31.0, 78.0)"
+31.0,78.0,,,0:00:11.767000,TeamA ,From Kick Off ,RB ,Ball Receipt*,,,"Start position: (31.0, 78.0) | Time: 00:00:11.767 | Possession: TeamA | Phase: From Kick Off | Player Position: RB | Event: Ball Receipt*
+","(31.0, 78.0)","(None, None)"
+31.0,78.0,32.0,77.0,0:00:11.767000,TeamA ,From Kick Off ,RB ,Carry,,,"Start position: (31.0, 78.0), End Position: (32.0, 77.0) | Time: 00:00:11.767 | Possession: TeamA | Phase: From Kick Off | Player Position: RB | Event: Carry
+","(31.0, 78.0)","(32.0, 77.0)"
+32.0,77.0,,,0:00:12.288000,TeamA ,From Kick Off ,RB ,Miscontrol,,,"Start position: (32.0, 77.0) | Time: 00:00:12.288 | Possession: TeamA | Phase: From Kick Off | Player Position: RB | Event: Miscontrol
+","(32.0, 77.0)","(None, None)"
+36.0,79.0,42.0,71.0,0:00:20.105000,TeamB ,From Throw In ,LB ,Pass,,,"Start position: (36.0, 79.0), End Position: (42.0, 71.0) | Time: 00:00:20.105 | Possession: TeamB | Phase: From Throw In | Player Position: LB | Event: Pass
+","(36.0, 79.0)","(42.0, 71.0)"
+42.0,71.0,,,0:00:22.085000,TeamB ,From Throw In ,CAM ,Ball Receipt*,,,"Start position: (42.0, 71.0) | Time: 00:00:22.085 | Possession: TeamB | Phase: From Throw In | Player Position: CAM | Event: Ball Receipt*
+","(42.0, 71.0)","(None, None)"
+42.0,71.0,41.0,71.0,0:00:22.085000,TeamB ,From Throw In ,CAM ,Carry,,,"Start position: (42.0, 71.0), End Position: (41.0, 71.0) | Time: 00:00:22.085 | Possession: TeamB | Phase: From Throw In | Player Position: CAM | Event: Carry
+","(42.0, 71.0)","(41.0, 71.0)"
+41.0,71.0,23.0,61.0,0:00:23.580000,TeamB ,From Throw In ,CAM ,Pass,"Incomplete
+",,"Start position: (41.0, 71.0), End Position: (23.0, 61.0) | Time: 00:00:23.580 | Possession: TeamB | Phase: From Throw In | Player Position: CAM | Event: Pass | Outcome: Incomplete
+","(41.0, 71.0)","(23.0, 61.0)"
+22.0,63.0,,,0:00:25.623000,TeamB ,From Throw In ,RW ,Ball Receipt*,"Incomplete
+",,"Start position: (22.0, 63.0) | Time: 00:00:25.623 | Possession: TeamB | Phase: From Throw In | Player Position: RW | Event: Ball Receipt* | Outcome: Incomplete
+","(22.0, 63.0)","(None, None)"
+24.0,62.0,,,0:00:25.623000,TeamA ,From Throw In ,RCM ,Ball Recovery,,,"Start position: (24.0, 62.0) | Time: 00:00:25.623 | Possession: TeamA | Phase: From Throw In | Player Position: RCM | Event: Ball Recovery
+","(24.0, 62.0)","(None, None)"
+24.0,62.0,10.0,61.0,0:00:25.623000,TeamA ,From Throw In ,RCM ,Carry,,,"Start position: (24.0, 62.0), End Position: (10.0, 61.0) | Time: 00:00:25.623 | Possession: TeamA | Phase: From Throw In | Player Position: RCM | Event: Carry
+","(24.0, 62.0)","(10.0, 61.0)"
+9.0,60.0,,,0:00:27.132000,TeamB ,From Throw In ,RW ,Foul Committed,,,"Start position: (9.0, 60.0) | Time: 00:00:27.132 | Possession: TeamB | Phase: From Throw In | Player Position: RW | Event: Foul Committed
+","(9.0, 60.0)","(None, None)"
+10.0,62.0,96.0,53.0,0:00:43.666000,TeamA ,From Free Kick ,G ,Pass,"Incomplete
+",,"Start position: (10.0, 62.0), End Position: (96.0, 53.0) | Time: 00:00:43.666 | Possession: TeamA | Phase: From Free Kick | Player Position: G | Event: Pass | Outcome: Incomplete
+","(10.0, 62.0)","(96.0, 53.0)"
+95.0,52.0,49.0,78.0,0:00:46.524000,TeamB ,From Free Kick ,CB ,Pass,"Incomplete
+",,"Start position: (95.0, 52.0), End Position: (49.0, 78.0) | Time: 00:00:46.524 | Possession: TeamB | Phase: From Free Kick | Player Position: CB | Event: Pass | Outcome: Incomplete
+","(95.0, 52.0)","(49.0, 78.0)"
+50.0,79.0,,,0:00:49.792000,TeamA ,From Free Kick ,RW ,Ball Recovery,,,"Start position: (50.0, 79.0) | Time: 00:00:49.792 | Possession: TeamA | Phase: From Free Kick | Player Position: RW | Event: Ball Recovery
+","(50.0, 79.0)","(None, None)"
+50.0,79.0,70.0,73.0,0:00:49.792000,TeamA ,From Free Kick ,RW ,Carry,,,"Start position: (50.0, 79.0), End Position: (70.0, 73.0) | Time: 00:00:49.792 | Possession: TeamA | Phase: From Free Kick | Player Position: RW | Event: Carry
+","(50.0, 79.0)","(70.0, 73.0)"
+70.0,73.0,108.0,58.0,0:00:52.692000,TeamA ,From Free Kick ,RW ,Pass,"Incomplete
+",,"Start position: (70.0, 73.0), End Position: (108.0, 58.0) | Time: 00:00:52.692 | Possession: TeamA | Phase: From Free Kick | Player Position: RW | Event: Pass | Outcome: Incomplete
+","(70.0, 73.0)","(108.0, 58.0)"
+97.0,64.0,,,0:00:55.511000,TeamA ,From Free Kick ,CF ,Ball Receipt*,"Incomplete
+",,"Start position: (97.0, 64.0) | Time: 00:00:55.511 | Possession: TeamA | Phase: From Free Kick | Player Position: CF | Event: Ball Receipt* | Outcome: Incomplete
+","(97.0, 64.0)","(None, None)"
+107.0,57.0,,,0:00:55.511000,TeamB ,From Free Kick ,G ,Ball Recovery,,,"Start position: (107.0, 57.0) | Time: 00:00:55.511 | Possession: TeamB | Phase: From Free Kick | Player Position: G | Event: Ball Recovery
+","(107.0, 57.0)","(None, None)"
+107.0,57.0,100.0,66.0,0:00:55.511000,TeamB ,From Free Kick ,G ,Carry,,,"Start position: (107.0, 57.0), End Position: (100.0, 66.0) | Time: 00:00:55.511 | Possession: TeamB | Phase: From Free Kick | Player Position: G | Event: Carry
+","(107.0, 57.0)","(100.0, 66.0)"
+100.0,66.0,92.0,76.0,0:00:57.172000,TeamB ,From Free Kick ,G ,Pass,,,"Start position: (100.0, 66.0), End Position: (92.0, 76.0) | Time: 00:00:57.172 | Possession: TeamB | Phase: From Free Kick | Player Position: G | Event: Pass
+","(100.0, 66.0)","(92.0, 76.0)"
+92.0,76.0,,,0:00:58.029000,TeamB ,From Free Kick ,LCB ,Ball Receipt*,,,"Start position: (92.0, 76.0) | Time: 00:00:58.029 | Possession: TeamB | Phase: From Free Kick | Player Position: LCB | Event: Ball Receipt*
+","(92.0, 76.0)","(None, None)"
+92.0,76.0,92.0,76.0,0:00:58.029000,TeamB ,From Free Kick ,LCB ,Carry,,,"Start position: (92.0, 76.0), End Position: (92.0, 76.0) | Time: 00:00:58.029 | Possession: TeamB | Phase: From Free Kick | Player Position: LCB | Event: Carry
+","(92.0, 76.0)","(92.0, 76.0)"
+92.0,76.0,66.0,79.0,0:00:59.001000,TeamB ,From Free Kick ,LCB ,Pass,"Out
+",,"Start position: (92.0, 76.0), End Position: (66.0, 79.0) | Time: 00:00:59.001 | Possession: TeamB | Phase: From Free Kick | Player Position: LCB | Event: Pass | Outcome: Out
+","(92.0, 76.0)","(66.0, 79.0)"
+67.0,77.0,,,0:01:00.163000,TeamB ,From Free Kick ,LB ,Ball Receipt*,"Incomplete
+",,"Start position: (67.0, 77.0) | Time: 00:01:00.163 | Possession: TeamB | Phase: From Free Kick | Player Position: LB | Event: Ball Receipt* | Outcome: Incomplete
+","(67.0, 77.0)","(None, None)"
+73.0,80.0,84.0,77.0,0:01:04.596000,TeamA ,From Throw In ,RW ,Pass,,,"Start position: (73.0, 80.0), End Position: (84.0, 77.0) | Time: 00:01:04.596 | Possession: TeamA | Phase: From Throw In | Player Position: RW | Event: Pass
+","(73.0, 80.0)","(84.0, 77.0)"
+84.0,77.0,,,0:01:05.326000,TeamA ,From Throw In ,CF ,Ball Receipt*,,,"Start position: (84.0, 77.0) | Time: 00:01:05.326 | Possession: TeamA | Phase: From Throw In | Player Position: CF | Event: Ball Receipt*
+","(84.0, 77.0)","(None, None)"
+84.0,77.0,85.0,79.0,0:01:05.326000,TeamA ,From Throw In ,CF ,Carry,,,"Start position: (84.0, 77.0), End Position: (85.0, 79.0) | Time: 00:01:05.326 | Possession: TeamA | Phase: From Throw In | Player Position: CF | Event: Carry
+","(84.0, 77.0)","(85.0, 79.0)"
+85.0,79.0,104.0,79.0,0:01:05.366000,TeamA ,From Throw In ,CF ,Pass,"Out
+",,"Start position: (85.0, 79.0), End Position: (104.0, 79.0) | Time: 00:01:05.366 | Possession: TeamA | Phase: From Throw In | Player Position: CF | Event: Pass | Outcome: Out
+","(85.0, 79.0)","(104.0, 79.0)"
+98.0,79.0,,,0:01:08.516000,TeamA ,From Throw In ,RW ,Ball Receipt*,"Incomplete
+",,"Start position: (98.0, 79.0) | Time: 00:01:08.516 | Possession: TeamA | Phase: From Throw In | Player Position: RW | Event: Ball Receipt* | Outcome: Incomplete
+","(98.0, 79.0)","(None, None)"
+97.0,79.0,78.0,75.0,0:01:14.885000,TeamB ,From Throw In ,LB ,Pass,"Incomplete
+",,"Start position: (97.0, 79.0), End Position: (78.0, 75.0) | Time: 00:01:14.885 | Possession: TeamB | Phase: From Throw In | Player Position: LB | Event: Pass | Outcome: Incomplete
+","(97.0, 79.0)","(78.0, 75.0)"
+78.0,78.0,,,0:01:17.366000,TeamA ,From Throw In ,RCM ,Foul Committed,,,"Start position: (78.0, 78.0) | Time: 00:01:17.366 | Possession: TeamA | Phase: From Throw In | Player Position: RCM | Event: Foul Committed
+","(78.0, 78.0)","(None, None)"
+71.0,73.0,68.0,48.0,0:02:00.414000,TeamB ,From Free Kick ,LDM ,Pass,,,"Start position: (71.0, 73.0), End Position: (68.0, 48.0) | Time: 00:02:00.414 | Possession: TeamB | Phase: From Free Kick | Player Position: LDM | Event: Pass
+","(71.0, 73.0)","(68.0, 48.0)"
+68.0,48.0,,,0:02:01.744000,TeamB ,From Free Kick ,RDM ,Ball Receipt*,,,"Start position: (68.0, 48.0) | Time: 00:02:01.744 | Possession: TeamB | Phase: From Free Kick | Player Position: RDM | Event: Ball Receipt*
+","(68.0, 48.0)","(None, None)"
+68.0,48.0,51.0,37.0,0:02:01.933000,TeamB ,From Free Kick ,RDM ,Pass,,,"Start position: (68.0, 48.0), End Position: (51.0, 37.0) | Time: 00:02:01.933 | Possession: TeamB | Phase: From Free Kick | Player Position: RDM | Event: Pass
+","(68.0, 48.0)","(51.0, 37.0)"
+52.0,38.0,43.0,41.0,0:02:04.242000,TeamA ,Regular Play ,LCB ,Pass,,,"Start position: (52.0, 38.0), End Position: (43.0, 41.0) | Time: 00:02:04.242 | Possession: TeamA | Phase: Regular Play | Player Position: LCB | Event: Pass
+","(52.0, 38.0)","(43.0, 41.0)"
+43.0,41.0,,,0:02:05.713000,TeamA ,Regular Play ,RCB ,Ball Receipt*,,,"Start position: (43.0, 41.0) | Time: 00:02:05.713 | Possession: TeamA | Phase: Regular Play | Player Position: RCB | Event: Ball Receipt*
+","(43.0, 41.0)","(None, None)"
+43.0,41.0,43.0,41.0,0:02:05.713000,TeamA ,Regular Play ,RCB ,Carry,,,"Start position: (43.0, 41.0), End Position: (43.0, 41.0) | Time: 00:02:05.713 | Possession: TeamA | Phase: Regular Play | Player Position: RCB | Event: Carry
+","(43.0, 41.0)","(43.0, 41.0)"
+43.0,41.0,55.0,43.0,0:02:05.833000,TeamA ,Regular Play ,RCB ,Pass,,,"Start position: (43.0, 41.0), End Position: (55.0, 43.0) | Time: 00:02:05.833 | Possession: TeamA | Phase: Regular Play | Player Position: RCB | Event: Pass
+","(43.0, 41.0)","(55.0, 43.0)"
+55.0,43.0,,,0:02:06.509000,TeamA ,Regular Play ,CDM ,Ball Receipt*,,,"Start position: (55.0, 43.0) | Time: 00:02:06.509 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Ball Receipt*
+","(55.0, 43.0)","(None, None)"
+55.0,43.0,55.0,43.0,0:02:06.509000,TeamA ,Regular Play ,CDM ,Carry,,,"Start position: (55.0, 43.0), End Position: (55.0, 43.0) | Time: 00:02:06.509 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Carry
+","(55.0, 43.0)","(55.0, 43.0)"
+55.0,43.0,54.0,42.0,0:02:06.549000,TeamA ,Regular Play ,CDM ,Pass,"Incomplete
+",,"Start position: (55.0, 43.0), End Position: (54.0, 42.0) | Time: 00:02:06.549 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Pass | Outcome: Incomplete
+","(55.0, 43.0)","(54.0, 42.0)"
+51.0,42.0,,,0:02:06.618000,TeamA ,Regular Play ,RCM ,Ball Receipt*,"Incomplete
+",,"Start position: (51.0, 42.0) | Time: 00:02:06.618 | Possession: TeamA | Phase: Regular Play | Player Position: RCM | Event: Ball Receipt* | Outcome: Incomplete
+","(51.0, 42.0)","(None, None)"
+53.0,41.0,,,0:02:07.037000,TeamB ,Regular Play ,LDM ,Ball Recovery,,,"Start position: (53.0, 41.0) | Time: 00:02:07.037 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Ball Recovery
+","(53.0, 41.0)","(None, None)"
+53.0,41.0,55.0,42.0,0:02:07.037000,TeamB ,Regular Play ,LDM ,Carry,,,"Start position: (53.0, 41.0), End Position: (55.0, 42.0) | Time: 00:02:07.037 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Carry
+","(53.0, 41.0)","(55.0, 42.0)"
+55.0,42.0,,,0:02:07.517000,TeamB ,Regular Play ,LDM ,Dribble,"Complete
+",,"Start position: (55.0, 42.0) | Time: 00:02:07.517 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Dribble | Outcome: Complete
+","(55.0, 42.0)","(None, None)"
+55.0,42.0,60.0,41.0,0:02:07.517000,TeamB ,Regular Play ,LDM ,Carry,,,"Start position: (55.0, 42.0), End Position: (60.0, 41.0) | Time: 00:02:07.517 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Carry
+","(55.0, 42.0)","(60.0, 41.0)"
+60.0,41.0,73.0,41.0,0:02:08.160000,TeamB ,Regular Play ,LDM ,Pass,,,"Start position: (60.0, 41.0), End Position: (73.0, 41.0) | Time: 00:02:08.160 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Pass
+","(60.0, 41.0)","(73.0, 41.0)"
+73.0,41.0,,,0:02:09.652000,TeamB ,Regular Play ,LCB ,Ball Receipt*,,,"Start position: (73.0, 41.0) | Time: 00:02:09.652 | Possession: TeamB | Phase: Regular Play | Player Position: LCB | Event: Ball Receipt*
+","(73.0, 41.0)","(None, None)"
+73.0,41.0,73.0,41.0,0:02:09.652000,TeamB ,Regular Play ,LCB ,Carry,,,"Start position: (73.0, 41.0), End Position: (73.0, 41.0) | Time: 00:02:09.652 | Possession: TeamB | Phase: Regular Play | Player Position: LCB | Event: Carry
+","(73.0, 41.0)","(73.0, 41.0)"
+73.0,41.0,55.0,51.0,0:02:09.789000,TeamB ,Regular Play ,LCB ,Pass,,,"Start position: (73.0, 41.0), End Position: (55.0, 51.0) | Time: 00:02:09.789 | Possession: TeamB | Phase: Regular Play | Player Position: LCB | Event: Pass
+","(73.0, 41.0)","(55.0, 51.0)"
+55.0,51.0,,,0:02:10.978000,TeamB ,Regular Play ,LCF ,Ball Receipt*,,,"Start position: (55.0, 51.0) | Time: 00:02:10.978 | Possession: TeamB | Phase: Regular Play | Player Position: LCF | Event: Ball Receipt*
+","(55.0, 51.0)","(None, None)"
+55.0,51.0,55.0,51.0,0:02:10.978000,TeamB ,Regular Play ,LCF ,Carry,,,"Start position: (55.0, 51.0), End Position: (55.0, 51.0) | Time: 00:02:10.978 | Possession: TeamB | Phase: Regular Play | Player Position: LCF | Event: Carry
+","(55.0, 51.0)","(55.0, 51.0)"
+55.0,51.0,63.0,46.0,0:02:11.087000,TeamB ,Regular Play ,LCF ,Pass,,,"Start position: (55.0, 51.0), End Position: (63.0, 46.0) | Time: 00:02:11.087 | Possession: TeamB | Phase: Regular Play | Player Position: LCF | Event: Pass
+","(55.0, 51.0)","(63.0, 46.0)"
+63.0,46.0,,,0:02:12.454000,TeamB ,Regular Play ,RDM ,Ball Receipt*,,,"Start position: (63.0, 46.0) | Time: 00:02:12.454 | Possession: TeamB | Phase: Regular Play | Player Position: RDM | Event: Ball Receipt*
+","(63.0, 46.0)","(None, None)"
+63.0,46.0,63.0,46.0,0:02:12.454000,TeamB ,Regular Play ,RDM ,Carry,,,"Start position: (63.0, 46.0), End Position: (63.0, 46.0) | Time: 00:02:12.454 | Possession: TeamB | Phase: Regular Play | Player Position: RDM | Event: Carry
+","(63.0, 46.0)","(63.0, 46.0)"
+63.0,46.0,64.0,20.0,0:02:12.534000,TeamB ,Regular Play ,RDM ,Pass,,,"Start position: (63.0, 46.0), End Position: (64.0, 20.0) | Time: 00:02:12.534 | Possession: TeamB | Phase: Regular Play | Player Position: RDM | Event: Pass
+","(63.0, 46.0)","(64.0, 20.0)"
+64.0,20.0,,,0:02:14.174000,TeamB ,Regular Play ,RCB ,Ball Receipt*,,,"Start position: (64.0, 20.0) | Time: 00:02:14.174 | Possession: TeamB | Phase: Regular Play | Player Position: RCB | Event: Ball Receipt*
+","(64.0, 20.0)","(None, None)"
+64.0,20.0,64.0,20.0,0:02:14.174000,TeamB ,Regular Play ,RCB ,Carry,,,"Start position: (64.0, 20.0), End Position: (64.0, 20.0) | Time: 00:02:14.174 | Possession: TeamB | Phase: Regular Play | Player Position: RCB | Event: Carry
+","(64.0, 20.0)","(64.0, 20.0)"
+64.0,20.0,15.0,33.0,0:02:15.672000,TeamB ,Regular Play ,RCB ,Pass,"Incomplete
+",,"Start position: (64.0, 20.0), End Position: (15.0, 33.0) | Time: 00:02:15.672 | Possession: TeamB | Phase: Regular Play | Player Position: RCB | Event: Pass | Outcome: Incomplete
+","(64.0, 20.0)","(15.0, 33.0)"
+16.0,35.0,,,0:02:18.499000,TeamB ,Regular Play ,RCF ,Ball Receipt*,"Incomplete
+",,"Start position: (16.0, 35.0) | Time: 00:02:18.499 | Possession: TeamB | Phase: Regular Play | Player Position: RCF | Event: Ball Receipt* | Outcome: Incomplete
+","(16.0, 35.0)","(None, None)"
+16.0,34.0,,,0:02:18.499000,TeamA ,Regular Play ,G ,Goal Keeper,,"Punch
+","Start position: (16.0, 34.0) | Time: 00:02:18.499 | Possession: TeamA | Phase: Regular Play | Player Position: G | Event: Goal Keeper | Type: Punch
+","(16.0, 34.0)","(None, None)"
+20.0,25.0,42.0,30.0,0:02:26.408000,TeamA ,Regular Play ,LDM ,Pass,,,"Start position: (20.0, 25.0), End Position: (42.0, 30.0) | Time: 00:02:26.408 | Possession: TeamA | Phase: Regular Play | Player Position: LDM | Event: Pass
+","(20.0, 25.0)","(42.0, 30.0)"
+44.0,33.0,,,0:02:29.136000,TeamA ,Regular Play ,CF ,Ball Receipt*,"Incomplete
+",,"Start position: (44.0, 33.0) | Time: 00:02:29.136 | Possession: TeamA | Phase: Regular Play | Player Position: CF | Event: Ball Receipt* | Outcome: Incomplete
+","(44.0, 33.0)","(None, None)"
+41.0,28.0,,,0:02:29.136000,TeamB ,Regular Play ,LDM ,Clearance,,,"Start position: (41.0, 28.0) | Time: 00:02:29.136 | Possession: TeamB | Phase: Regular Play | Player Position: LDM | Event: Clearance
+","(41.0, 28.0)","(None, None)"
+33.0,1.0,32.0,17.0,0:02:45.229000,TeamB ,From Throw In ,RB ,Pass,,,"Start position: (33.0, 1.0), End Position: (32.0, 17.0) | Time: 00:02:45.229 | Possession: TeamB | Phase: From Throw In | Player Position: RB | Event: Pass
+","(33.0, 1.0)","(32.0, 17.0)"
+32.0,17.0,,,0:02:47.719000,TeamB ,From Throw In ,LDM ,Ball Receipt*,,,"Start position: (32.0, 17.0) | Time: 00:02:47.719 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Ball Receipt*
+","(32.0, 17.0)","(None, None)"
+32.0,17.0,31.0,17.0,0:02:47.719000,TeamB ,From Throw In ,LDM ,Carry,,,"Start position: (32.0, 17.0), End Position: (31.0, 17.0) | Time: 00:02:47.719 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Carry
+","(32.0, 17.0)","(31.0, 17.0)"
+31.0,17.0,38.0,8.0,0:02:47.799000,TeamB ,From Throw In ,LDM ,Pass,"Incomplete
+",,"Start position: (31.0, 17.0), End Position: (38.0, 8.0) | Time: 00:02:47.799 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Pass | Outcome: Incomplete
+","(31.0, 17.0)","(38.0, 8.0)"
+38.0,6.0,,,0:02:49.106000,TeamB ,From Throw In ,RDM ,Ball Receipt*,"Incomplete
+",,"Start position: (38.0, 6.0) | Time: 00:02:49.106 | Possession: TeamB | Phase: From Throw In | Player Position: RDM | Event: Ball Receipt* | Outcome: Incomplete
+","(38.0, 6.0)","(None, None)"
+39.0,9.0,,,0:02:49.106000,TeamA ,From Throw In ,CAM ,Interception,"Lost Out
+",,"Start position: (39.0, 9.0) | Time: 00:02:49.106 | Possession: TeamA | Phase: From Throw In | Player Position: CAM | Event: Interception | Outcome: Lost Out
+","(39.0, 9.0)","(None, None)"
+38.0,0.0,38.0,7.0,0:02:55.995000,TeamB ,From Throw In ,RB ,Pass,,,"Start position: (38.0, 0.0), End Position: (38.0, 7.0) | Time: 00:02:55.995 | Possession: TeamB | Phase: From Throw In | Player Position: RB | Event: Pass
+","(38.0, 0.0)","(38.0, 7.0)"
+38.0,7.0,,,0:02:56.780000,TeamB ,From Throw In ,LDM ,Ball Receipt*,,,"Start position: (38.0, 7.0) | Time: 00:02:56.780 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Ball Receipt*
+","(38.0, 7.0)","(None, None)"
+38.0,7.0,39.0,11.0,0:02:56.780000,TeamB ,From Throw In ,LDM ,Carry,,,"Start position: (38.0, 7.0), End Position: (39.0, 11.0) | Time: 00:02:56.780 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Carry
+","(38.0, 7.0)","(39.0, 11.0)"
+39.0,11.0,71.0,77.0,0:02:58.628000,TeamB ,From Throw In ,LDM ,Pass,"Incomplete
+",,"Start position: (39.0, 11.0), End Position: (71.0, 77.0) | Time: 00:02:58.628 | Possession: TeamB | Phase: From Throw In | Player Position: LDM | Event: Pass | Outcome: Incomplete
+","(39.0, 11.0)","(71.0, 77.0)"
+68.0,69.0,,,0:03:03.928000,TeamB ,From Throw In ,LB ,Ball Receipt*,"Incomplete
+",,"Start position: (68.0, 69.0) | Time: 00:03:03.928 | Possession: TeamB | Phase: From Throw In | Player Position: LB | Event: Ball Receipt* | Outcome: Incomplete
+","(68.0, 69.0)","(None, None)"
+71.0,77.0,,,0:03:03.928000,TeamB ,From Throw In ,LB ,Interception,"Lost Out
+",,"Start position: (71.0, 77.0) | Time: 00:03:03.928 | Possession: TeamB | Phase: From Throw In | Player Position: LB | Event: Interception | Outcome: Lost Out
+","(71.0, 77.0)","(None, None)"
+72.0,80.0,88.0,75.0,0:03:11.283000,TeamA ,From Throw In ,RB ,Pass,"Incomplete
+",,"Start position: (72.0, 80.0), End Position: (88.0, 75.0) | Time: 00:03:11.283 | Possession: TeamA | Phase: From Throw In | Player Position: RB | Event: Pass | Outcome: Incomplete
+","(72.0, 80.0)","(88.0, 75.0)"
+87.0,74.0,,,0:03:13.310000,TeamB ,Regular Play ,LB ,Ball Recovery,,,"Start position: (87.0, 74.0) | Time: 00:03:13.310 | Possession: TeamB | Phase: Regular Play | Player Position: LB | Event: Ball Recovery
+","(87.0, 74.0)","(None, None)"
+87.0,74.0,87.0,77.0,0:03:13.310000,TeamB ,Regular Play ,LB ,Carry,,,"Start position: (87.0, 74.0), End Position: (87.0, 77.0) | Time: 00:03:13.310 | Possession: TeamB | Phase: Regular Play | Player Position: LB | Event: Carry
+","(87.0, 74.0)","(87.0, 77.0)"
+87.0,77.0,73.0,75.0,0:03:13.390000,TeamB ,Regular Play ,LB ,Pass,"Incomplete
+",,"Start position: (87.0, 77.0), End Position: (73.0, 75.0) | Time: 00:03:13.390 | Possession: TeamB | Phase: Regular Play | Player Position: LB | Event: Pass | Outcome: Incomplete
+","(87.0, 77.0)","(73.0, 75.0)"
+75.0,73.0,,,0:03:14.548000,TeamB ,Regular Play ,CAM ,Ball Receipt*,"Incomplete
+",,"Start position: (75.0, 73.0) | Time: 00:03:14.548 | Possession: TeamB | Phase: Regular Play | Player Position: CAM | Event: Ball Receipt* | Outcome: Incomplete
+","(75.0, 73.0)","(None, None)"
+74.0,76.0,,,0:03:14.548000,TeamA ,Regular Play ,RCM ,Interception,"Won
+",,"Start position: (74.0, 76.0) | Time: 00:03:14.548 | Possession: TeamA | Phase: Regular Play | Player Position: RCM | Event: Interception | Outcome: Won
+","(74.0, 76.0)","(None, None)"
+74.0,76.0,79.0,77.0,0:03:14.548000,TeamA ,Regular Play ,RCM ,Carry,,,"Start position: (74.0, 76.0), End Position: (79.0, 77.0) | Time: 00:03:14.548 | Possession: TeamA | Phase: Regular Play | Player Position: RCM | Event: Carry
+","(74.0, 76.0)","(79.0, 77.0)"
+78.0,76.0,,,0:03:15.136000,TeamB ,Regular Play ,LB ,Foul Committed,,,"Start position: (78.0, 76.0) | Time: 00:03:15.136 | Possession: TeamB | Phase: Regular Play | Player Position: LB | Event: Foul Committed
+","(78.0, 76.0)","(None, None)"
+79.0,77.0,79.0,77.0,0:03:15.136000,TeamA ,Regular Play ,RCM ,Carry,,,"Start position: (79.0, 77.0), End Position: (79.0, 77.0) | Time: 00:03:15.136 | Possession: TeamA | Phase: Regular Play | Player Position: RCM | Event: Carry
+","(79.0, 77.0)","(79.0, 77.0)"
+79.0,77.0,86.0,52.0,0:03:15.195000,TeamA ,Regular Play ,RCM ,Pass,,,"Start position: (79.0, 77.0), End Position: (86.0, 52.0) | Time: 00:03:15.195 | Possession: TeamA | Phase: Regular Play | Player Position: RCM | Event: Pass
+","(79.0, 77.0)","(86.0, 52.0)"
+86.0,52.0,,,0:03:16.516000,TeamA ,Regular Play ,RW ,Ball Receipt*,,,"Start position: (86.0, 52.0) | Time: 00:03:16.516 | Possession: TeamA | Phase: Regular Play | Player Position: RW | Event: Ball Receipt*
+","(86.0, 52.0)","(None, None)"
+86.0,52.0,81.0,52.0,0:03:16.516000,TeamA ,Regular Play ,RW ,Carry,,,"Start position: (86.0, 52.0), End Position: (81.0, 52.0) | Time: 00:03:16.516 | Possession: TeamA | Phase: Regular Play | Player Position: RW | Event: Carry
+","(86.0, 52.0)","(81.0, 52.0)"
+81.0,52.0,75.0,56.0,0:03:17.656000,TeamA ,Regular Play ,RW ,Pass,,,"Start position: (81.0, 52.0), End Position: (75.0, 56.0) | Time: 00:03:17.656 | Possession: TeamA | Phase: Regular Play | Player Position: RW | Event: Pass
+","(81.0, 52.0)","(75.0, 56.0)"
+75.0,56.0,,,0:03:18.611000,TeamA ,Regular Play ,CDM ,Ball Receipt*,,,"Start position: (75.0, 56.0) | Time: 00:03:18.611 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Ball Receipt*
+","(75.0, 56.0)","(None, None)"
+75.0,56.0,75.0,56.0,0:03:18.611000,TeamA ,Regular Play ,CDM ,Carry,,,"Start position: (75.0, 56.0), End Position: (75.0, 56.0) | Time: 00:03:18.611 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Carry
+","(75.0, 56.0)","(75.0, 56.0)"
+75.0,56.0,79.0,44.0,0:03:18.831000,TeamA ,Regular Play ,CDM ,Pass,,,"Start position: (75.0, 56.0), End Position: (79.0, 44.0) | Time: 00:03:18.831 | Possession: TeamA | Phase: Regular Play | Player Position: CDM | Event: Pass
+","(75.0, 56.0)","(79.0, 44.0)"
+79.0,44.0,,,0:03:19.705000,TeamA ,Regular Play ,LCM ,Ball Receipt*,,,"Start position: (79.0, 44.0) | Time: 00:03:19.705 | Possession: TeamA | Phase: Regular Play | Player Position: LCM | Event: Ball Receipt*
+","(79.0, 44.0)","(None, None)"

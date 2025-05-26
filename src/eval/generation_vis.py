@@ -5,7 +5,48 @@ import pandas as pd
 import numpy as np
 from collections import Counter
 import numpy as np
+import re
 
+def extract_event_info(text):
+    pattern = (
+        r"(?:Start position: \((?P<start_x>[\d\.]+), (?P<start_y>[\d\.]+)\))?"
+        r"(?:, End Position: \((?P<end_x>[\d\.]+), (?P<end_y>[\d\.]+)\))?"
+        r"(?:\s*\|\s*)?Time: (?P<time>\d{2}:\d{2}:\d{2}\.\d{3})"
+        r"(?:\s*\|\s*Possession: (?P<team_name>[^|]+))?"
+        r"(?:\s*\|\s*Phase: (?P<phase>[^|]+))?"
+        r"(?:\s*\|\s*Player Position: (?P<player_pos>[^|]+))?"
+        r"(?:\s*\|\s*Event: (?P<event>[^|]+))"
+        r"(?:\s*\|\s*Outcome: (?P<outcome>[^|]+))?"
+        r"(?:\s*\|\s*Type: (?P<type>[^|]+))?"
+    )
+
+
+    match = re.search(pattern, text)
+    if not match:
+        return None
+
+    data = match.groupdict()
+
+    # If event or time are missing, reject the match
+    if data['event'] is None or data['time'] is None:
+        return None
+
+    # Convert coordinates to floats
+    for key in ['start_x', 'start_y', 'end_x', 'end_y']:
+        if data[key] is not None:
+            data[key] = float(data[key])
+
+    # Convert time to timedelta
+    h, m, s = data['time'].split(':')
+    sec, ms = s.split('.')
+    data['time'] = timedelta(
+        hours=int(h),
+        minutes=int(m),
+        seconds=int(sec),
+        milliseconds=int(ms)
+    )
+
+    return data
 
 def euclidean_distance(gt, pred, start):
     if start:

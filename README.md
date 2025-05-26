@@ -11,7 +11,7 @@ The training was done on an A100 and it took around 18 hours.
 
 ## How to use
 
-```
+```python
 from adapters import list_adapters, get_adapter_info
 from transformers import ( 
     AutoTokenizer,

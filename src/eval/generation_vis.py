@@ -7,6 +7,8 @@ from collections import Counter
 import numpy as np
 import re
 
+figure_path = "./figures/"
+
 def extract_event_info(text):
     pattern = (
         r"(?:Start position: \((?P<start_x>[\d\.]+), (?P<start_y>[\d\.]+)\))?"
@@ -175,7 +177,7 @@ def plot_confusion_matrix(gts, preds):
     disp.plot(ax=ax, cmap='Blues', xticks_rotation=45)
     plt.title("Confusion Matrix: Event Prediction")
     plt.tight_layout()
-    plt.savefig("conf_matrix.png")
+    plt.savefig(figure_path + "conf_matrix.png")
     plt.show()
 
 
@@ -215,5 +217,5 @@ def plot_bar_chart(gts, preds):
     plt.grid(axis='y', linestyle='--', alpha=0.7)
     plt.legend()  # Add a legend to differentiate between predicted and GT
     plt.tight_layout()
-    plt.savefig("event_count_comparison.png")
+    plt.savefig(figure_path + "event_count_comparison.png")
     plt.show()
